@@ -1,0 +1,184 @@
+/* ============================================
+   DARK MODE — Theme Overrides
+   ============================================ */
+
+[data-theme="dark"] {
+  --color-bg: #0D1117;
+  --color-bg-alt: #161B22;
+  --color-bg-section: #1C2128;
+  --color-bg-card: #1C2128;
+  --color-bg-glass: rgba(22, 27, 34, 0.75);
+  --color-text: #E6EDF3;
+  --color-text-secondary: #8B949E;
+  --color-text-muted: #6E7681;
+  --color-heading: #F0F6FC;
+  --color-border: rgba(240, 246, 252, 0.1);
+  --color-border-strong: rgba(240, 246, 252, 0.2);
+  --color-overlay: rgba(0, 0, 0, 0.7);
+  --color-overlay-dark: rgba(0, 0, 0, 0.9);
+
+  --glass-bg: rgba(22, 27, 34, 0.75);
+  --glass-bg-strong: rgba(22, 27, 34, 0.92);
+  --glass-border: rgba(240, 246, 252, 0.08);
+
+  --gradient-gold-subtle: linear-gradient(135deg, rgba(201,164,92,0.08) 0%, rgba(201,164,92,0.03) 100%);
+  --gradient-glass: linear-gradient(135deg, rgba(22,27,34,0.8) 0%, rgba(22,27,34,0.5) 100%);
+
+  --shadow-xs: 0 1px 2px rgba(0,0,0,0.2);
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.25);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.3);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.35);
+  --shadow-xl: 0 16px 48px rgba(0,0,0,0.4);
+  --shadow-2xl: 0 24px 64px rgba(0,0,0,0.5);
+  --shadow-gold: 0 4px 20px rgba(201,164,92,0.2);
+}
+
+/* Scrollbar dark */
+[data-theme="dark"] ::-webkit-scrollbar-track {
+  background: #0D1117;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background: #30363D;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+  background: #484F58;
+}
+
+/* Navbar dark overrides */
+[data-theme="dark"] .navbar.scrolled {
+  background: rgba(13, 17, 23, 0.92);
+  border-bottom-color: rgba(240, 246, 252, 0.06);
+}
+
+/* Footer already dark */
+[data-theme="dark"] .footer {
+  background: #010409;
+}
+
+/* Card borders */
+[data-theme="dark"] .card:hover {
+  border-color: rgba(201, 164, 92, 0.3);
+}
+
+[data-theme="dark"] .service-card:hover {
+  box-shadow: 0 16px 48px rgba(0,0,0,0.5);
+}
+
+/* Forms dark */
+[data-theme="dark"] .form-input {
+  background: #0D1117;
+  border-color: rgba(240, 246, 252, 0.15);
+}
+
+[data-theme="dark"] .form-input:focus {
+  border-color: var(--color-accent);
+  background: #161B22;
+}
+
+[data-theme="dark"] .form-input::placeholder {
+  color: #484F58;
+}
+
+/* Table rows */
+[data-theme="dark"] th,
+[data-theme="dark"] td {
+  border-bottom-color: rgba(240, 246, 252, 0.08);
+}
+
+[data-theme="dark"] tr:hover td {
+  background: rgba(201, 164, 92, 0.03);
+}
+
+/* Buttons dark adjustments */
+[data-theme="dark"] .btn--ghost {
+  color: #E6EDF3;
+  border-color: rgba(240, 246, 252, 0.2);
+}
+
+[data-theme="dark"] .btn--ghost:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+/* Selection dark */
+[data-theme="dark"] ::selection {
+  background: var(--color-accent);
+  color: #0D1117;
+}
+
+/* Mobile menu dark */
+[data-theme="dark"] .mobile-menu {
+  background: #161B22;
+}
+
+[data-theme="dark"] .mobile-menu__link {
+  color: #E6EDF3;
+  border-bottom-color: rgba(240, 246, 252, 0.08);
+}
+
+/* Image brightness in dark */
+[data-theme="dark"] .img-darken {
+  filter: brightness(0.85);
+}
+
+/* Accordion dark */
+[data-theme="dark"] .accordion__trigger {
+  color: #F0F6FC;
+}
+
+[data-theme="dark"] .accordion__item {
+  border-bottom-color: rgba(240, 246, 252, 0.08);
+}
+
+/* Testimonial card */
+[data-theme="dark"] .testimonial-card {
+  background: #161B22;
+  border-color: rgba(240, 246, 252, 0.08);
+}
+
+/* Page hero */
+[data-theme="dark"] .page-hero::before {
+  background: linear-gradient(135deg, rgba(0,0,0,0.92) 0%, rgba(23,74,74,0.6) 100%);
+}
+
+/* Blockquote */
+[data-theme="dark"] blockquote {
+  background: rgba(201,164,92,0.06);
+}
+
+/* Tag */
+[data-theme="dark"] .tag {
+  color: var(--color-accent);
+  border-color: rgba(201,164,92,0.25);
+}
+
+[data-theme="dark"] .tag:hover {
+  background: var(--color-accent);
+  color: #0D1117;
+}
+
+/* Checklist */
+[data-theme="dark"] .checklist__item:hover {
+  background: rgba(201,164,92,0.06);
+}
+
+/* Stat number */
+[data-theme="dark"] .stat__label {
+  color: #6E7681;
+}
+
+/* Back to top dark shadow */
+[data-theme="dark"] .back-to-top {
+  box-shadow: 0 4px 20px rgba(201,164,92,0.15);
+}
+
+/* Section dark bg on dark theme */
+[data-theme="dark"] .section--mist {
+  background-color: #161B22;
+}
+
+[data-theme="dark"] .section--alt {
+  background-color: #0D1117;
+}

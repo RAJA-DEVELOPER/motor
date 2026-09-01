@@ -1,0 +1,169 @@
+/* ============================================
+   RTL — Right-to-Left Layout Overrides
+   ============================================ */
+
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Navbar */
+[dir="rtl"] .navbar__nav {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .navbar__link::after {
+  left: auto;
+  right: var(--space-4);
+}
+
+/* Section label line */
+[dir="rtl"] .section-header .section-label {
+  padding-left: 0;
+  padding-right: var(--space-10);
+}
+
+[dir="rtl"] .section-header .section-label::before {
+  left: auto;
+  right: 0;
+}
+
+/* Hero slide */
+[dir="rtl"] .hero-slide__content {
+  margin-left: 0;
+  margin-right: max(var(--container-padding), calc((100% - var(--container-max)) / 2));
+}
+
+[dir="rtl"] .hero-slide__label {
+  padding-left: 0;
+  padding-right: var(--space-10);
+}
+
+[dir="rtl"] .hero-slide__label::before {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .hero-slider__arrow--prev {
+  left: auto;
+  right: var(--space-8);
+}
+
+[dir="rtl"] .hero-slider__arrow--next {
+  right: auto;
+  left: var(--space-8);
+}
+
+[dir="rtl"] .hero-slider__arrow--prev svg {
+  transform: rotate(180deg);
+}
+
+[dir="rtl"] .hero-slider__arrow--next svg {
+  transform: rotate(180deg);
+}
+
+/* Footer */
+[dir="rtl"] .footer__grid {
+  direction: rtl;
+}
+
+[dir="rtl"] .footer__contact-item {
+  flex-direction: row-reverse;
+}
+
+/* Forms */
+[dir="rtl"] .form-select {
+  background-position: left var(--space-4) center;
+  padding-right: var(--space-5);
+  padding-left: var(--space-10);
+}
+
+/* Breadcrumb */
+[dir="rtl"] .breadcrumb {
+  flex-direction: row-reverse;
+}
+
+/* Blockquote */
+[dir="rtl"] blockquote {
+  border-left: none;
+  border-right: 3px solid var(--color-accent);
+  border-radius: var(--radius-md) 0 0 var(--radius-md);
+}
+
+/* Lists */
+[dir="rtl"] ul, [dir="rtl"] ol {
+  padding-left: 0;
+  padding-right: var(--space-6);
+}
+
+/* Mobile Menu */
+[dir="rtl"] .mobile-menu {
+  right: auto;
+  left: -100%;
+}
+
+[dir="rtl"] .mobile-menu.open {
+  left: 0;
+}
+
+[dir="rtl"] .mobile-menu__close {
+  right: auto;
+  left: var(--space-6);
+}
+
+/* Back to Top */
+[dir="rtl"] .back-to-top {
+  right: auto;
+  left: var(--space-8);
+}
+
+/* Accordion */
+[dir="rtl"] .accordion__trigger {
+  text-align: right;
+  flex-direction: row-reverse;
+}
+
+/* Gold divider */
+[dir="rtl"] .divider-gold {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+/* Service card top bar */
+[dir="rtl"] .service-card::before {
+  transform-origin: right;
+}
+
+/* Checklist */
+[dir="rtl"] .checklist__item {
+  flex-direction: row-reverse;
+}
+
+/* Marquee reversal */
+[dir="rtl"] .marquee__track {
+  animation-direction: reverse;
+}
+
+/* Reveal animations reversed */
+[dir="rtl"] .reveal-left {
+  transform: translateX(40px);
+}
+
+[dir="rtl"] .reveal-right {
+  transform: translateX(-40px);
+}
+
+[dir="rtl"] .reveal-left.revealed,
+[dir="rtl"] .reveal-right.revealed {
+  transform: translateX(0);
+}
+
+/* Tabs */
+[dir="rtl"] .tabs {
+  flex-direction: row-reverse;
+}
+
+/* Contact items */
+[dir="rtl"] .footer__links a {
+  flex-direction: row-reverse;
+}

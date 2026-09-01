@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MotorSure — Premium Motor Insurance & Vehicle Documentation Service. New insurance, policy renewal, RC transfer, fitness certificates, PUC assistance and more.">
+  <meta name="keywords" content="motor insurance, vehicle documentation, RC transfer, fitness certificate, PUC, policy renewal">
+  <meta property="og:title" content="MotorSure — Premium Motor Insurance & Vehicle Documentation">
+  <meta property="og:description" content="Your trusted partner for comprehensive motor insurance and vehicle documentation services.">
+  <meta property="og:type" content="website">
+  <title>MotorSure — Premium Motor Insurance & Vehicle Documentation</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/dark-mode.css">
+  <link rel="stylesheet" href="css/rtl.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- NAVBAR -->
+  <!-- ═══════════════════════════════════════════ -->
+  <header class="navbar" id="navbar" role="banner">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__brand" aria-label="MotorSure Home">
+        <div class="navbar__logo"><svg viewBox="0 0 24 24" fill="none" stroke="#15191C" stroke-width="1.7" width="24" height="24" aria-hidden="true"><path d="M12 2.8L18.8 6V12.2C18.8 16 12 20.8 12 20.8S5.2 16 5.2 12.2V6L12 2.8Z" stroke-linejoin="round"/><circle cx="12" cy="11.2" r="4.6" stroke-width="1.4"/><circle cx="12" cy="11.2" r="1.3" stroke-width="1.2"/><path d="M12 6.6V9.9M16 13.45L13.15 11.9M8 13.45L10.85 11.9" stroke-linecap="round" stroke-width="1.4"/></svg></div>
+        <div class="navbar__brand-name">
+          MotorSure
+          <span>Insurance & Docs</span>
+        </div>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <ul class="navbar__nav" role="menubar">
+          <li role="none"><a href="index.html" class="navbar__link active" role="menuitem">Home</a></li>
+          <li role="none"><a href="home-2.html" class="navbar__link" role="menuitem">Home 2</a></li>
+          <li role="none"><a href="about.html" class="navbar__link" role="menuitem">About</a></li>
+          <li role="none"><a href="services.html" class="navbar__link" role="menuitem">Services</a></li>
+          <li role="none"><a href="blog.html" class="navbar__link" role="menuitem">Blog</a></li>
+          <li role="none"><a href="contact.html" class="navbar__link" role="menuitem">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="navbar__actions">
+        <a href="contact.html" class="btn btn--primary btn--sm navbar__cta">Get a Quote</a>
+        <button class="navbar__toggle-btn" data-theme-toggle aria-label="Toggle dark mode">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="navbar__toggle-btn" data-rtl-toggle aria-label="Toggle RTL">LTR</button>
+        <button class="navbar__hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu__overlay" aria-hidden="true"></div>
+  <aside class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+    <button class="mobile-menu__close" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <ul class="mobile-menu__nav">
+      <li><a href="index.html" class="mobile-menu__link active">Home</a></li>
+      <li><a href="home-2.html" class="mobile-menu__link">Home 2</a></li>
+      <li><a href="about.html" class="mobile-menu__link">About</a></li>
+      <li><a href="services.html" class="mobile-menu__link">Services</a></li>
+      <li><a href="blog.html" class="mobile-menu__link">Blog</a></li>
+      <li><a href="contact.html" class="mobile-menu__link">Contact</a></li>
+    </ul>
+  </aside>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- MAIN CONTENT -->
+  <!-- ═══════════════════════════════════════════ -->
+  <main id="main-content">
+
+    <!-- ══ SECTION 1: Hero Slider ══ -->
+    <section class="hero-slider" id="hero-slider" aria-label="Hero Banner">
+      <div class="hero-slider__track">
+        <!-- Slide 1 -->
+        <div class="hero-slide" aria-hidden="false">
+          <img src="assets/images/hero-car.jpg" alt="Premium black sedan on highway at golden hour" class="hero-slide__bg" loading="eager">
+          <div class="hero-slide__overlay"></div>
+          <div class="hero-slide__content">
+            <span class="hero-slide__label">Premium Motor Insurance</span>
+            <h1 class="hero-slide__title">Drive with Confidence, Insure with Trust</h1>
+            <p class="hero-slide__text">Comprehensive two-wheeler and four-wheeler insurance solutions tailored to protect what matters most. Experience seamless coverage from India's most trusted motor documentation service.</p>
+            <div class="hero-slide__actions">
+              <a href="services.html" class="btn btn--primary btn--lg">Explore Services</a>
+              <a href="contact.html" class="btn btn--secondary btn--lg" style="border-color:rgba(247,245,240,0.4);color:var(--ivory)">Get a Quote</a>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="hero-slide" aria-hidden="true">
+          <img src="assets/images/hero-bike.jpg" alt="Premium blue motorcycle in urban setting" class="hero-slide__bg" loading="lazy">
+          <div class="hero-slide__overlay"></div>
+          <div class="hero-slide__content">
+            <span class="hero-slide__label">Two-Wheeler Protection</span>
+            <h2 class="hero-slide__title" style="font-size:var(--fs-display);color:var(--ivory)">Complete Two-Wheeler Insurance Solutions</h2>
+            <p class="hero-slide__text">From sports bikes to daily commuters — get instant policy issuance, hassle-free renewals and 24/7 claim assistance for your two-wheeler.</p>
+            <div class="hero-slide__actions">
+              <a href="services.html" class="btn btn--primary btn--lg">View Plans</a>
+              <a href="contact.html" class="btn btn--secondary btn--lg" style="border-color:rgba(247,245,240,0.4);color:var(--ivory)">Call Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="hero-slide" aria-hidden="true">
+          <img src="assets/images/hero-suv.jpg" alt="White luxury SUV at premium office" class="hero-slide__bg" loading="lazy">
+          <div class="hero-slide__overlay"></div>
+          <div class="hero-slide__content">
+            <span class="hero-slide__label">Vehicle Documentation</span>
+            <h2 class="hero-slide__title" style="font-size:var(--fs-display);color:var(--ivory)">RC Transfer, Fitness & PUC — All Under One Roof</h2>
+            <p class="hero-slide__text">Streamlined document processing for RC transfers, fitness certificates, PUC compliance and more. Walk-in or book home collection today.</p>
+            <div class="hero-slide__actions">
+              <a href="services.html" class="btn btn--primary btn--lg">Start Now</a>
+              <a href="about.html" class="btn btn--secondary btn--lg" style="border-color:rgba(247,245,240,0.4);color:var(--ivory)">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider Controls -->
+      <button class="hero-slider__arrow hero-slider__arrow--prev" aria-label="Previous slide">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <button class="hero-slider__arrow hero-slider__arrow--next" aria-label="Next slide">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+      <div class="hero-slider__dots" role="tablist" aria-label="Slide navigation">
+        <button class="hero-slider__dot active" role="tab" aria-label="Slide 1" aria-selected="true"></button>
+        <button class="hero-slider__dot" role="tab" aria-label="Slide 2" aria-selected="false"></button>
+        <button class="hero-slider__dot" role="tab" aria-label="Slide 3" aria-selected="false"></button>
+      </div>
+    </section>
+
+    <!-- ══ SECTION 2: Trust Bar ══ -->
+    <section class="section section--dark" id="trust-bar" aria-label="Statistics">
+      <div class="container">
+        <div class="trust-bar__grid grid" style="grid-template-columns: repeat(4, 1fr); text-align:center;">
+          <div class="stat reveal reveal-delay-1">
+            <span class="stat__number" data-count="15000" data-suffix="+">0</span>
+            <span class="stat__label">Policies Issued</span>
+          </div>
+          <div class="stat reveal reveal-delay-2">
+            <span class="stat__number" data-count="99" data-suffix="%">0</span>
+            <span class="stat__label">Claim Success Rate</span>
+          </div>
+          <div class="stat reveal reveal-delay-3">
+            <span class="stat__number" data-count="50" data-suffix="+">0</span>
+            <span class="stat__label">Insurance Partners</span>
+          </div>
+          <div class="stat reveal reveal-delay-4">
+            <span class="stat__number" data-count="12" data-suffix="+">0</span>
+            <span class="stat__label">Years of Trust</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ SECTION 3: Core Services Grid ══ -->
+    <section class="section" id="services-section" aria-label="Our Services">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">What We Offer</span>
+          <h2>Comprehensive Motor Services</h2>
+          <p>From new insurance policies to essential vehicle documentation, we handle every aspect of your motor needs with precision and care.</p>
+        </div>
+
+        <div class="grid grid-3" style="gap:var(--space-6);">
+          <!-- Service 1 -->
+          <div class="service-card reveal reveal-delay-1">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <h3 class="service-card__title">New Insurance</h3>
+            <p class="service-card__text">Get instant comprehensive or third-party motor insurance for two-wheelers and four-wheelers from top insurers at the best premiums.</p>
+          </div>
+          <!-- Service 2 -->
+          <div class="service-card reveal reveal-delay-2">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+            </div>
+            <h3 class="service-card__title">Policy Renewal</h3>
+            <p class="service-card__text">Seamless policy renewal with no-claim bonus protection, timely reminders, and assistance in choosing the best renewal plan for your vehicle.</p>
+          </div>
+          <!-- Service 3 -->
+          <div class="service-card reveal reveal-delay-3">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+            </div>
+            <h3 class="service-card__title">RC Transfer</h3>
+            <p class="service-card__text">Hassle-free Registration Certificate transfer for vehicle ownership changes. Complete documentation support with RTO coordination.</p>
+          </div>
+          <!-- Service 4 -->
+          <div class="service-card reveal reveal-delay-4">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+            </div>
+            <h3 class="service-card__title">Fitness Certificate</h3>
+            <p class="service-card__text">Timely fitness certificate procurement and renewal for commercial and transport vehicles. We manage inspections and paperwork end-to-end.</p>
+          </div>
+          <!-- Service 5 -->
+          <div class="service-card reveal reveal-delay-5">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+            </div>
+            <h3 class="service-card__title">PUC Assistance</h3>
+            <p class="service-card__text">Pollution Under Control certificate support — locate nearest PUC centers, track validity, and get renewal reminders automatically.</p>
+          </div>
+          <!-- Service 6 -->
+          <div class="service-card reveal reveal-delay-6">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/></svg>
+            </div>
+            <h3 class="service-card__title">Document Checklists</h3>
+            <p class="service-card__text">Never miss a required document again. Access our comprehensive downloadable checklists for every vehicle service and procedure.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ SECTION 4: How It Works — Redesigned ══ -->
+    <section class="section section--mist" id="how-it-works" aria-label="How It Works" style="position:relative;overflow:hidden;">
+      <!-- subtle background glow -->
+      <div aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;background:radial-gradient(600px 300px at 50% 0%, rgba(201,164,92,0.07) 0%, transparent 70%), radial-gradient(500px 400px at 90% 80%, rgba(23,74,74,0.05) 0%, transparent 70%);"></div>
+      <div class="container" style="position:relative;z-index:1;">
+        <div class="section-header reveal" style="max-width:640px;margin-left:auto;margin-right:auto;">
+          <span class="section-label">Simple Process</span>
+          <h2>How It Works</h2>
+          <p>Three easy steps to get your motor insurance or vehicle documentation sorted — quickly, reliably, and without any hassle.</p>
+        </div>
+
+        <div class="how-it-works__steps" style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-6);position:relative;align-items:stretch;">
+          <!-- Desktop connecting line behind numbers -->
+          <div class="process-connector-line" aria-hidden="true" style="position:absolute;top:62px;left:18%;right:18%;height:2px;background:linear-gradient(90deg, transparent 0%, rgba(201,164,92,0.35) 12%, rgba(201,164,92,0.45) 50%, rgba(201,164,92,0.35) 88%, transparent 100%);pointer-events:none;"></div>
+          <div class="process-connector-line" aria-hidden="true" style="position:absolute;top:62px;left:18%;right:18%;height:1px;background:linear-gradient(90deg, transparent 0%, rgba(201,164,92,0.15) 12%, transparent 50%, rgba(201,164,92,0.15) 88%, transparent 100%);transform:translateY(4px);pointer-events:none;"></div>
+
+          <!-- Step 1 -->
+          <div class="reveal reveal-delay-1" style="position:relative;">
+            <div class="card hover-lift" style="height:100%;padding:var(--space-8) var(--space-6);border-radius:var(--radius-xl);text-align:center;display:flex;flex-direction:column;align-items:center;border:1px solid rgba(201,164,92,0.12);box-shadow:var(--shadow-sm);">
+              <div style="width:68px;height:68px;border-radius:50%;background:var(--gradient-gold);display:flex;align-items:center;justify-content:center;font-family:var(--font-heading);font-size:1.35rem;color:var(--obsidian);font-weight:700;box-shadow:0 4px 16px rgba(201,164,92,0.3), 0 0 0 8px rgba(201,164,92,0.10);margin-bottom:var(--space-6);position:relative;z-index:1;">01</div>
+              <span style="font-size:var(--fs-caption);font-weight:var(--fw-bold);letter-spacing:var(--ls-widest);color:var(--color-accent);text-transform:uppercase;margin-bottom:var(--space-2);">Step One</span>
+              <h3 style="font-size:var(--fs-h5);margin-bottom:var(--space-3);">Select Your Service</h3>
+              <p style="font-size:var(--fs-small);color:var(--color-text-secondary);line-height:var(--lh-relaxed);margin:0;">Choose from new insurance, renewal, RC transfer, fitness certificate, PUC or document assistance.</p>
+              <div style="margin-top:auto;padding-top:var(--space-6);display:flex;align-items:center;gap:var(--space-2);font-size:var(--fs-caption);font-weight:var(--fw-semibold);color:var(--color-accent);">
+                <span style="width:24px;height:1px;background:var(--color-accent);opacity:0.5;"></span> 01 — 03
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="reveal reveal-delay-2" style="position:relative;">
+            <div class="card hover-lift" style="height:100%;padding:var(--space-8) var(--space-6);border-radius:var(--radius-xl);text-align:center;display:flex;flex-direction:column;align-items:center;border:1px solid rgba(201,164,92,0.12);box-shadow:var(--shadow-sm);">
+              <div style="width:68px;height:68px;border-radius:50%;background:var(--gradient-gold);display:flex;align-items:center;justify-content:center;font-family:var(--font-heading);font-size:1.35rem;color:var(--obsidian);font-weight:700;box-shadow:0 4px 16px rgba(201,164,92,0.3), 0 0 0 8px rgba(201,164,92,0.10);margin-bottom:var(--space-6);position:relative;z-index:1;">02</div>
+              <span style="font-size:var(--fs-caption);font-weight:var(--fw-bold);letter-spacing:var(--ls-widest);color:var(--color-accent);text-transform:uppercase;margin-bottom:var(--space-2);">Step Two</span>
+              <h3 style="font-size:var(--fs-h5);margin-bottom:var(--space-3);">Submit Documents</h3>
+              <p style="font-size:var(--fs-small);color:var(--color-text-secondary);line-height:var(--lh-relaxed);margin:0;">Upload or bring required documents. Use our interactive checklist to ensure you have everything ready.</p>
+              <div style="margin-top:auto;padding-top:var(--space-6);display:flex;align-items:center;gap:var(--space-2);font-size:var(--fs-caption);font-weight:var(--fw-semibold);color:var(--color-accent);">
+                <span style="width:24px;height:1px;background:var(--color-accent);opacity:0.5;"></span> 02 — 03
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="reveal reveal-delay-3" style="position:relative;">
+            <div class="card hover-lift" style="height:100%;padding:var(--space-8) var(--space-6);border-radius:var(--radius-xl);text-align:center;display:flex;flex-direction:column;align-items:center;border:1px solid rgba(201,164,92,0.12);box-shadow:var(--shadow-sm);position:relative;overflow:hidden;">
+              <!-- subtle gold corner glow for final step -->
+              <div aria-hidden="true" style="position:absolute;top:-40px;right:-40px;width:120px;height:120px;background:radial-gradient(circle, rgba(201,164,92,0.12) 0%, transparent 70%);pointer-events:none;"></div>
+              <div style="width:68px;height:68px;border-radius:50%;background:var(--gradient-gold);display:flex;align-items:center;justify-content:center;font-family:var(--font-heading);font-size:1.35rem;color:var(--obsidian);font-weight:700;box-shadow:0 4px 16px rgba(201,164,92,0.3), 0 0 0 8px rgba(201,164,92,0.10);margin-bottom:var(--space-6);position:relative;z-index:1;">03</div>
+              <span style="font-size:var(--fs-caption);font-weight:var(--fw-bold);letter-spacing:var(--ls-widest);color:var(--color-accent);text-transform:uppercase;margin-bottom:var(--space-2);">Step Three</span>
+              <h3 style="font-size:var(--fs-h5);margin-bottom:var(--space-3);">Get It Done</h3>
+              <p style="font-size:var(--fs-small);color:var(--color-text-secondary);line-height:var(--lh-relaxed);margin:0;">We handle all processing, RTO coordination and follow-ups. Receive your documents or policy at your doorstep.</p>
+              <div style="margin-top:auto;padding-top:var(--space-6);">
+                <a href="contact.html" style="font-size:var(--fs-caption);font-weight:var(--fw-bold);letter-spacing:var(--ls-wide);color:var(--color-accent);text-decoration:none;display:inline-flex;align-items:center;gap:6px;">Get started <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- bottom micro trust row -->
+        <div class="reveal" style="margin-top:var(--space-12);display:flex;flex-wrap:wrap;justify-content:center;gap:var(--space-8);padding:var(--space-6) var(--space-8);background:var(--color-bg-card);border:1px solid var(--color-border);border-radius:var(--radius-lg);max-width:720px;margin-left:auto;margin-right:auto;">
+          <span style="display:inline-flex;align-items:center;gap:var(--space-2);font-size:var(--fs-small);font-weight:var(--fw-medium);color:var(--color-text-secondary);"><span style="width:8px;height:8px;border-radius:50%;background:var(--color-success);display:inline-block;"></span> Same-day issuance</span>
+          <span style="display:inline-flex;align-items:center;gap:var(--space-2);font-size:var(--fs-small);font-weight:var(--fw-medium);color:var(--color-text-secondary);"><span style="width:8px;height:8px;border-radius:50%;background:var(--color-success);display:inline-block;"></span> Home collection</span>
+          <span style="display:inline-flex;align-items:center;gap:var(--space-2);font-size:var(--fs-small);font-weight:var(--fw-medium);color:var(--color-text-secondary);"><span style="width:8px;height:8px;border-radius:50%;background:var(--color-success);display:inline-block;"></span> 1 Lakh+ customers</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ SECTION 5: Testimonials ══ -->
+    <section class="section" id="testimonials" aria-label="Customer Testimonials">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Client Stories</span>
+          <h2>What Our Clients Say</h2>
+          <p>Trusted by thousands of vehicle owners across India for insurance and documentation services.</p>
+        </div>
+
+        <div class="grid grid-3" style="gap:var(--space-6);align-items:stretch;">
+          <div class="testimonial-card reveal reveal-delay-1">
+            <div class="stars" aria-label="5 out of 5 stars">
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="testimonial-card__quote">"MotorSure made my car insurance renewal incredibly simple. The entire process was completed in under 30 minutes, and they secured me a better premium than my previous insurer."</p>
+            <div class="testimonial-card__author">
+              <div style="width:48px;height:48px;border-radius:50%;background:var(--gradient-teal);display:flex;align-items:center;justify-content:center;color:var(--ivory);font-weight:700;font-size:1.1rem;flex-shrink:0;">RS</div>
+              <div>
+                <div class="testimonial-card__name">Rajesh Sharma</div>
+                <div class="testimonial-card__role">Business Owner, Mumbai</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal reveal-delay-2">
+            <div class="stars" aria-label="5 out of 5 stars">
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="testimonial-card__quote">"Needed an urgent RC transfer and their team handled everything — from document collection at my home to RTO submission. Absolutely professional service."</p>
+            <div class="testimonial-card__author">
+              <div style="width:48px;height:48px;border-radius:50%;background:var(--gradient-gold);display:flex;align-items:center;justify-content:center;color:var(--obsidian);font-weight:700;font-size:1.1rem;flex-shrink:0;">PM</div>
+              <div>
+                <div class="testimonial-card__name">Priya Mehta</div>
+                <div class="testimonial-card__role">IT Professional, Pune</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal reveal-delay-3">
+            <div class="stars" aria-label="5 out of 5 stars">
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="testimonial-card__quote">"As a fleet owner with 20+ vehicles, MotorSure manages all my insurance, fitness certificates and PUC renewals. They save me countless hours every month."</p>
+            <div class="testimonial-card__author">
+              <div style="width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,#174A4A,#C9A45C);display:flex;align-items:center;justify-content:center;color:var(--ivory);font-weight:700;font-size:1.1rem;flex-shrink:0;">AK</div>
+              <div>
+                <div class="testimonial-card__name">Amit Kumar</div>
+                <div class="testimonial-card__role">Fleet Owner, Delhi</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ SECTION 6: CTA Banner ══ -->
+    <section class="section" id="cta-banner" aria-label="Call to action" style="background:var(--gradient-teal);padding:var(--space-16) 0;">
+      <div class="container" style="text-align:center;">
+        <div class="reveal">
+          <span class="section-label" style="color:var(--champagne);">Ready to Get Started?</span>
+          <h2 style="color:var(--ivory);margin-bottom:var(--space-5);max-width:700px;margin-left:auto;margin-right:auto;">Protect Your Vehicle Today with India's Trusted Motor Insurance Partner</h2>
+          <p style="color:var(--mist);max-width:560px;margin:0 auto var(--space-8);font-size:var(--fs-body-lg);">Whether you need new insurance, a policy renewal, or vehicle documentation services — we're just a call away.</p>
+          <div style="display:flex;gap:var(--space-4);justify-content:center;flex-wrap:wrap;">
+            <a href="contact.html" class="btn btn--primary btn--lg">Book Appointment</a>
+            <a href="tel:+919876543210" class="btn btn--secondary btn--lg" style="border-color:rgba(247,245,240,0.4);color:var(--ivory);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+              Call Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- FOOTER -->
+  <!-- ═══════════════════════════════════════════ -->
+  <footer class="footer" id="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <!-- Column 1: Brand -->
+        <div>
+          <div class="footer__brand">
+            <div class="footer__logo"><svg viewBox="0 0 24 24" fill="none" stroke="#15191C" stroke-width="1.7" width="24" height="24" aria-hidden="true"><path d="M12 2.8L18.8 6V12.2C18.8 16 12 20.8 12 20.8S5.2 16 5.2 12.2V6L12 2.8Z" stroke-linejoin="round"/><circle cx="12" cy="11.2" r="4.6" stroke-width="1.4"/><circle cx="12" cy="11.2" r="1.3" stroke-width="1.2"/><path d="M12 6.6V9.9M16 13.45L13.15 11.9M8 13.45L10.85 11.9" stroke-linecap="round" stroke-width="1.4"/></svg></div>
+            <div class="footer__brand-name">MotorSure</div>
+          </div>
+          <p class="footer__about">Your trusted partner for comprehensive motor insurance and vehicle documentation services. Serving vehicle owners across India with integrity and excellence since 2012.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+            <a href="#" class="footer__social-link" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+            <a href="#" class="footer__social-link" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" class="footer__social-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg></a>
+          </div>
+        </div>
+        <!-- Column 2: Quick Links -->
+        <div>
+          <h3 class="footer__heading">Quick Links</h3><ul class="footer__links"><li><a href="index.html">Home</a></li><li><a href="home-2.html">Home 2</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul>
+        </div>
+        <!-- Column 3: Services -->
+        <div>
+          <h3 class="footer__heading">Services</h3>
+          <ul class="footer__links">
+            <li><a href="services.html">New Insurance</a></li>
+            <li><a href="services.html">Policy Renewal</a></li>
+            <li><a href="services.html">RC Transfer</a></li>
+            <li><a href="services.html">Fitness Certificate</a></li>
+            <li><a href="services.html">PUC Assistance</a></li>
+            <li><a href="services.html">Document Checklists</a></li>
+          </ul>
+        </div>
+        <!-- Column 4: Contact -->
+        <div>
+          <h3 class="footer__heading">Contact Us</h3>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>42 Mahatma Gandhi Road,<br>Andheri West, Mumbai 400058</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            <span>+91 98765 43210<br>+91 22 2634 5678</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>info@motorsure.in<br>support@motorsure.in</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2024 MotorSure. All rights reserved.</p>
+        <ul class="footer__bottom-links">
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+          <li><a href="sitemap.html">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/theme.js"></script>
+  <script src="js/rtl.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/scroll-reveal.js"></script>
+  <script src="js/accordion.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/back-to-top.js"></script>
+  <script src="js/page-transitions.js"></script>
+  <script src="js/lazy-load.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

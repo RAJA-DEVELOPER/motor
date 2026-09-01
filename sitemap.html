@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MotorSure Sitemap — Navigate all pages, services, and resources on our website.">
+  <title>Sitemap — MotorSure</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="css/variables.css"><link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/layout.css"><link rel="stylesheet" href="css/animations.css"><link rel="stylesheet" href="css/dark-mode.css"><link rel="stylesheet" href="css/rtl.css"><link rel="stylesheet" href="css/responsive.css">
+  <style>
+    .sitemap-tree{list-style:none;padding:0;margin:0;}
+    .sitemap-tree li{margin-bottom:var(--space-2);}
+    .sitemap-tree a{display:inline-flex;align-items:center;gap:var(--space-3);padding:var(--space-3) var(--space-4);text-decoration:none;color:var(--color-text);font-weight:var(--fw-medium);border-radius:var(--radius-md);transition:var(--transition-base);width:100%;}
+    .sitemap-tree a:hover{background:var(--color-bg-alt);color:var(--color-accent);}
+    .sitemap-tree a svg{flex-shrink:0;width:18px;height:18px;stroke:var(--color-accent);}
+    .sitemap-tree__sub{list-style:none;padding-left:var(--space-10);margin-top:var(--space-2);}
+    .sitemap-tree__sub a{font-weight:var(--fw-regular);font-size:var(--fs-small);color:var(--color-text-secondary);}
+    .sitemap-section{margin-bottom:var(--space-10);}
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <header class="navbar" id="navbar" role="banner">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__brand" aria-label="MotorSure Home">
+        <div class="navbar__logo"><svg viewBox="0 0 24 24" fill="none" stroke="#15191C" stroke-width="1.7" width="24" height="24" aria-hidden="true"><path d="M12 2.8L18.8 6V12.2C18.8 16 12 20.8 12 20.8S5.2 16 5.2 12.2V6L12 2.8Z" stroke-linejoin="round"/><circle cx="12" cy="11.2" r="4.6" stroke-width="1.4"/><circle cx="12" cy="11.2" r="1.3" stroke-width="1.2"/><path d="M12 6.6V9.9M16 13.45L13.15 11.9M8 13.45L10.85 11.9" stroke-linecap="round" stroke-width="1.4"/></svg></div>
+        <div class="navbar__brand-name">
+          MotorSure
+          <span>Insurance & Docs</span>
+        </div>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <ul class="navbar__nav" role="menubar">
+          <li role="none"><a href="index.html" class="navbar__link" role="menuitem">Home</a></li>
+          <li role="none"><a href="home-2.html" class="navbar__link" role="menuitem">Home 2</a></li>
+          <li role="none"><a href="about.html" class="navbar__link" role="menuitem">About</a></li>
+          <li role="none"><a href="services.html" class="navbar__link" role="menuitem">Services</a></li>
+          <li role="none"><a href="blog.html" class="navbar__link" role="menuitem">Blog</a></li>
+          <li role="none"><a href="contact.html" class="navbar__link" role="menuitem">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="navbar__actions">
+        <a href="contact.html" class="btn btn--primary btn--sm navbar__cta">Get a Quote</a>
+        <button class="navbar__toggle-btn" data-theme-toggle aria-label="Toggle dark mode">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="navbar__toggle-btn" data-rtl-toggle aria-label="Toggle RTL">LTR</button>
+        <button class="navbar__hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-menu__overlay" aria-hidden="true"></div>
+  <aside class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+    <button class="mobile-menu__close" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <ul class="mobile-menu__nav">
+      <li><a href="index.html" class="mobile-menu__link">Home</a></li>
+      <li><a href="home-2.html" class="mobile-menu__link">Home 2</a></li>
+      <li><a href="about.html" class="mobile-menu__link">About</a></li>
+      <li><a href="services.html" class="mobile-menu__link">Services</a></li>
+      <li><a href="blog.html" class="mobile-menu__link">Blog</a></li>
+      <li><a href="contact.html" class="mobile-menu__link">Contact</a></li>
+    </ul>
+  </aside>
+
+  <main id="main-content">
+    <!-- ══ SECTION 1: Sitemap Header ══ -->
+    <section class="page-hero" style="background:var(--gradient-dark);padding:calc(var(--space-24) + 80px) 0 var(--space-12);">
+      <div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="breadcrumb__separator">›</span><span class="breadcrumb__current">Sitemap</span></nav><h1>Sitemap</h1><p style="color:var(--mist);margin-top:var(--space-3);">A complete overview of all pages and resources available on MotorSure.</p></div>
+    </section>
+
+    <!-- ══ SECTION 2: Visual Hierarchy Map ══ -->
+    <section class="section" id="site-structure" aria-label="Site Structure">
+      <div class="container container--narrow">
+        <div class="section-header reveal"><span class="section-label">Visual Map</span><h2>Site Architecture</h2></div>
+        <div class="card reveal" style="border-radius:var(--radius-xl);padding:var(--space-8);text-align:center;">
+          <div style="display:inline-block;padding:var(--space-3) var(--space-6);background:var(--gradient-gold);border-radius:var(--radius-md);font-family:var(--font-heading);font-size:var(--fs-body-lg);color:var(--obsidian);margin-bottom:var(--space-6);">MotorSure</div>
+          <div style="width:2px;height:24px;background:var(--color-accent);margin:0 auto;" aria-hidden="true"></div>
+          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-4);margin-top:var(--space-4);">
+            <a href="index.html" style="padding:var(--space-3);background:var(--gradient-gold-subtle);border-radius:var(--radius-md);font-size:var(--fs-small);font-weight:var(--fw-semibold);text-decoration:none;color:var(--color-heading);">Home</a>
+            <a href="about.html" style="padding:var(--space-3);background:var(--gradient-gold-subtle);border-radius:var(--radius-md);font-size:var(--fs-small);font-weight:var(--fw-semibold);text-decoration:none;color:var(--color-heading);">About</a>
+            <a href="services.html" style="padding:var(--space-3);background:var(--gradient-gold-subtle);border-radius:var(--radius-md);font-size:var(--fs-small);font-weight:var(--fw-semibold);text-decoration:none;color:var(--color-heading);">Services</a>
+            <a href="blog.html" style="padding:var(--space-3);background:var(--gradient-gold-subtle);border-radius:var(--radius-md);font-size:var(--fs-small);font-weight:var(--fw-semibold);text-decoration:none;color:var(--color-heading);">Blog</a>
+            <a href="home-2.html" style="padding:var(--space-3);background:var(--gradient-gold-subtle);border-radius:var(--radius-md);font-size:var(--fs-small);font-weight:var(--fw-semibold);text-decoration:none;color:var(--color-heading);">Home 2</a>
+            <a href="contact.html" style="padding:var(--space-3);background:var(--gradient-gold-subtle);border-radius:var(--radius-md);font-size:var(--fs-small);font-weight:var(--fw-semibold);text-decoration:none;color:var(--color-heading);">Contact</a>
+            <a href="privacy-policy.html" style="padding:var(--space-3);background:var(--gradient-gold-subtle);border-radius:var(--radius-md);font-size:var(--fs-small);font-weight:var(--fw-semibold);text-decoration:none;color:var(--color-heading);">Privacy</a>
+            <a href="terms.html" style="padding:var(--space-3);background:var(--gradient-gold-subtle);border-radius:var(--radius-md);font-size:var(--fs-small);font-weight:var(--fw-semibold);text-decoration:none;color:var(--color-heading);">Terms</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ SECTION 3: Main Pages Tree ══ -->
+    <section class="section section--mist" id="pages-tree" aria-label="All Pages">
+      <div class="container container--narrow">
+        <div class="grid grid-2" style="gap:var(--space-10);">
+          <div class="sitemap-section reveal">
+            <h3 style="margin-bottom:var(--space-6);font-size:var(--fs-h4);">Main Pages</h3>
+            <ul class="sitemap-tree">
+              <li><a href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Home</a></li>
+              <li><a href="home-2.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Home 2 — Plans & Pricing</a></li>
+              <li><a href="about.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>About Us</a></li>
+              <li><a href="services.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>Services</a></li>
+              <li><a href="contact.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="sitemap-section reveal">
+            <h3 style="margin-bottom:var(--space-6);font-size:var(--fs-h4);">Blog & Articles</h3>
+            <ul class="sitemap-tree">
+              <li><a href="blog.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>Blog — All Articles</a>
+                <ul class="sitemap-tree__sub">
+                  <li><a href="blog-details.html">Guide to Motor Insurance in India</a></li>
+                  <li><a href="blog-details.html">Car Insurance Renewal Mistakes</a></li>
+                  <li><a href="blog-details.html">Two-Wheeler: Comprehensive vs Third-Party</a></li>
+                  <li><a href="blog-details.html">RC Transfer Process in Maharashtra</a></li>
+                  <li><a href="blog-details.html">PUC Certificate Compliance Guide</a></li>
+                  <li><a href="blog-details.html">Vehicle Fitness Certificate 2024 Rules</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ SECTION 4: Services Directory ══ -->
+    <section class="section" id="services-directory" aria-label="Services Directory">
+      <div class="container container--narrow">
+        <h3 style="margin-bottom:var(--space-6);font-size:var(--fs-h4);" class="reveal">Our Services</h3>
+        <div class="grid grid-3 reveal" style="gap:var(--space-4);">
+          <a href="services.html#service-details" class="card hover-lift" style="text-align:center;padding:var(--space-6);text-decoration:none;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.5" width="28" height="28" style="margin:0 auto var(--space-3);"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            <h4 style="font-size:var(--fs-body);color:var(--color-heading);">New Insurance</h4>
+          </a>
+          <a href="services.html#service-details" class="card hover-lift" style="text-align:center;padding:var(--space-6);text-decoration:none;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.5" width="28" height="28" style="margin:0 auto var(--space-3);"><path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+            <h4 style="font-size:var(--fs-body);color:var(--color-heading);">Policy Renewal</h4>
+          </a>
+          <a href="services.html#service-details" class="card hover-lift" style="text-align:center;padding:var(--space-6);text-decoration:none;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.5" width="28" height="28" style="margin:0 auto var(--space-3);"><path d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+            <h4 style="font-size:var(--fs-body);color:var(--color-heading);">RC Transfer</h4>
+          </a>
+          <a href="services.html#service-details" class="card hover-lift" style="text-align:center;padding:var(--space-6);text-decoration:none;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.5" width="28" height="28" style="margin:0 auto var(--space-3);"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+            <h4 style="font-size:var(--fs-body);color:var(--color-heading);">Fitness Certificate</h4>
+          </a>
+          <a href="services.html#service-details" class="card hover-lift" style="text-align:center;padding:var(--space-6);text-decoration:none;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.5" width="28" height="28" style="margin:0 auto var(--space-3);"><path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+            <h4 style="font-size:var(--fs-body);color:var(--color-heading);">PUC Assistance</h4>
+          </a>
+          <a href="services.html#checklist-section" class="card hover-lift" style="text-align:center;padding:var(--space-6);text-decoration:none;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.5" width="28" height="28" style="margin:0 auto var(--space-3);"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/></svg>
+            <h4 style="font-size:var(--fs-body);color:var(--color-heading);">Document Checklists</h4>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ SECTION 5: Legal Pages ══ -->
+    <section class="section section--mist" id="legal-pages" aria-label="Legal and Utility Pages">
+      <div class="container container--narrow">
+        <h3 style="margin-bottom:var(--space-6);font-size:var(--fs-h4);" class="reveal">Legal & Utility</h3>
+        <div class="grid grid-3 reveal" style="gap:var(--space-4);">
+          <a href="privacy-policy.html" class="card hover-lift" style="text-align:center;padding:var(--space-6);text-decoration:none;"><svg viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.5" width="28" height="28" style="margin:0 auto var(--space-3);"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg><h4 style="font-size:var(--fs-body);color:var(--color-heading);">Privacy Policy</h4></a>
+          <a href="terms.html" class="card hover-lift" style="text-align:center;padding:var(--space-6);text-decoration:none;"><svg viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.5" width="28" height="28" style="margin:0 auto var(--space-3);"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg><h4 style="font-size:var(--fs-body);color:var(--color-heading);">Terms & Conditions</h4></a>
+          <a href="sitemap.html" class="card hover-lift" style="text-align:center;padding:var(--space-6);text-decoration:none;border-color:var(--color-accent);"><svg viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.5" width="28" height="28" style="margin:0 auto var(--space-3);"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg><h4 style="font-size:var(--fs-body);color:var(--color-heading);">Sitemap</h4></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ SECTION 6: Quick Access CTA ══ -->
+    <section class="section" style="background:var(--gradient-teal);padding:var(--space-14) 0;" id="quick-access" aria-label="Quick access">
+      <div class="container" style="text-align:center;">
+        <div class="reveal">
+          <h2 style="color:var(--ivory);margin-bottom:var(--space-5);">Can't find what you're looking for?</h2>
+          <p style="color:var(--mist);margin-bottom:var(--space-8);max-width:480px;margin-left:auto;margin-right:auto;">Our team is always ready to help. Reach out to us and we'll guide you to the right page or service.</p>
+          <div style="display:flex;gap:var(--space-4);justify-content:center;flex-wrap:wrap;">
+            <a href="contact.html" class="btn btn--primary btn--lg">Contact Us</a>
+            <a href="index.html" class="btn btn--secondary btn--lg" style="border-color:rgba(247,245,240,0.4);color:var(--ivory);">Go to Home</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <!-- Column 1: Brand -->
+        <div>
+          <div class="footer__brand">
+            <div class="footer__logo"><svg viewBox="0 0 24 24" fill="none" stroke="#15191C" stroke-width="1.7" width="24" height="24" aria-hidden="true"><path d="M12 2.8L18.8 6V12.2C18.8 16 12 20.8 12 20.8S5.2 16 5.2 12.2V6L12 2.8Z" stroke-linejoin="round"/><circle cx="12" cy="11.2" r="4.6" stroke-width="1.4"/><circle cx="12" cy="11.2" r="1.3" stroke-width="1.2"/><path d="M12 6.6V9.9M16 13.45L13.15 11.9M8 13.45L10.85 11.9" stroke-linecap="round" stroke-width="1.4"/></svg></div>
+            <div class="footer__brand-name">MotorSure</div>
+          </div>
+          <p class="footer__about">Your trusted partner for comprehensive motor insurance and vehicle documentation services. Serving vehicle owners across India with integrity and excellence since 2012.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+            <a href="#" class="footer__social-link" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+            <a href="#" class="footer__social-link" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" class="footer__social-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg></a>
+          </div>
+        </div>
+        <!-- Column 2: Quick Links -->
+        <div>
+          <h3 class="footer__heading">Quick Links</h3><ul class="footer__links"><li><a href="index.html">Home</a></li><li><a href="home-2.html">Home 2</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul>
+        </div>
+        <!-- Column 3: Services -->
+        <div>
+          <h3 class="footer__heading">Services</h3>
+          <ul class="footer__links">
+            <li><a href="services.html">New Insurance</a></li>
+            <li><a href="services.html">Policy Renewal</a></li>
+            <li><a href="services.html">RC Transfer</a></li>
+            <li><a href="services.html">Fitness Certificate</a></li>
+            <li><a href="services.html">PUC Assistance</a></li>
+            <li><a href="services.html">Document Checklists</a></li>
+          </ul>
+        </div>
+        <!-- Column 4: Contact -->
+        <div>
+          <h3 class="footer__heading">Contact Us</h3>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>42 Mahatma Gandhi Road,<br>Andheri West, Mumbai 400058</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            <span>+91 98765 43210<br>+91 22 2634 5678</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>info@motorsure.in<br>support@motorsure.in</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2024 MotorSure. All rights reserved.</p>
+        <ul class="footer__bottom-links">
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+          <li><a href="sitemap.html">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <button class="back-to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg></button>
+  <script src="js/theme.js"></script><script src="js/rtl.js"></script><script src="js/navbar.js"></script><script src="js/scroll-reveal.js"></script><script src="js/back-to-top.js"></script><script src="js/page-transitions.js"></script><script src="js/lazy-load.js"></script><script src="js/app.js"></script>
+</body>
+</html>

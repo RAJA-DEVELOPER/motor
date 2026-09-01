@@ -1,0 +1,162 @@
+/* ============================================
+   DESIGN TOKENS — Motor Insurance Brand
+   ============================================ */
+
+:root {
+  /* ── Brand Colors ── */
+  --obsidian: #15191C;
+  --champagne: #C9A45C;
+  --champagne-light: #D4B574;
+  --champagne-dark: #B08D47;
+  --steel: #65727A;
+  --steel-light: #8A949B;
+  --ivory: #F7F5F0;
+  --ivory-warm: #F0EDE5;
+  --teal: #174A4A;
+  --teal-light: #1E6060;
+  --mist: #DDE4E3;
+  --mist-dark: #C5CFCE;
+
+  /* ── Semantic Colors ── */
+  --color-bg: var(--ivory);
+  --color-bg-alt: #FFFFFF;
+  --color-bg-section: var(--mist);
+  --color-bg-card: #FFFFFF;
+  --color-bg-glass: rgba(255, 255, 255, 0.65);
+  --color-text: var(--obsidian);
+  --color-text-secondary: var(--steel);
+  --color-text-muted: var(--steel-light);
+  --color-heading: var(--obsidian);
+  --color-accent: var(--champagne);
+  --color-accent-hover: var(--champagne-light);
+  --color-accent-dark: var(--champagne-dark);
+  --color-teal: var(--teal);
+  --color-teal-hover: var(--teal-light);
+  --color-border: rgba(101, 114, 122, 0.15);
+  --color-border-strong: rgba(101, 114, 122, 0.3);
+  --color-overlay: rgba(21, 25, 28, 0.6);
+  --color-overlay-dark: rgba(21, 25, 28, 0.85);
+  --color-success: #2E7D5B;
+  --color-error: #C0392B;
+  --color-warning: #D4A017;
+
+  /* ── Metallic Gradients ── */
+  --gradient-gold: linear-gradient(135deg, #C9A45C 0%, #E8D5A3 40%, #C9A45C 60%, #A8853A 100%);
+  --gradient-gold-subtle: linear-gradient(135deg, rgba(201,164,92,0.1) 0%, rgba(201,164,92,0.05) 100%);
+  --gradient-teal: linear-gradient(135deg, #174A4A 0%, #1E6060 50%, #174A4A 100%);
+  --gradient-dark: linear-gradient(180deg, #15191C 0%, #1E2328 100%);
+  --gradient-hero: linear-gradient(135deg, rgba(21,25,28,0.9) 0%, rgba(23,74,74,0.7) 100%);
+  --gradient-glass: linear-gradient(135deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.4) 100%);
+
+  /* ── Typography ── */
+  --font-heading: 'DM Serif Display', Georgia, 'Times New Roman', serif;
+  --font-body: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --fs-display: clamp(2.8rem, 5vw, 4.5rem);
+  --fs-h1: clamp(2.2rem, 4vw, 3.5rem);
+  --fs-h2: clamp(1.8rem, 3vw, 2.75rem);
+  --fs-h3: clamp(1.4rem, 2.2vw, 1.85rem);
+  --fs-h4: clamp(1.15rem, 1.6vw, 1.4rem);
+  --fs-h5: clamp(1rem, 1.2vw, 1.15rem);
+  --fs-body: clamp(0.95rem, 1vw, 1.05rem);
+  --fs-body-lg: clamp(1.05rem, 1.1vw, 1.2rem);
+  --fs-small: clamp(0.82rem, 0.9vw, 0.9rem);
+  --fs-caption: clamp(0.72rem, 0.8vw, 0.8rem);
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+
+  --lh-tight: 1.2;
+  --lh-snug: 1.35;
+  --lh-normal: 1.6;
+  --lh-relaxed: 1.75;
+
+  --ls-tight: -0.02em;
+  --ls-normal: 0;
+  --ls-wide: 0.05em;
+  --ls-wider: 0.1em;
+  --ls-widest: 0.15em;
+
+  /* ── Spacing Scale (4px base) ── */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px */
+  --space-20: 5rem;     /* 80px */
+  --space-24: 6rem;     /* 96px */
+  --space-32: 8rem;     /* 128px */
+
+  --section-padding: clamp(4rem, 8vw, 7rem);
+  --container-max: 1280px;
+  --container-narrow: 960px;
+  --container-wide: 1440px;
+  --container-padding: clamp(1.25rem, 4vw, 2.5rem);
+
+  /* ── Borders & Radii ── */
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  --radius-full: 9999px;
+
+  --border-thin: 1px solid var(--color-border);
+  --border-medium: 2px solid var(--color-border);
+  --border-accent: 2px solid var(--color-accent);
+
+  /* ── Shadows ── */
+  --shadow-xs: 0 1px 2px rgba(21,25,28,0.04);
+  --shadow-sm: 0 2px 8px rgba(21,25,28,0.06);
+  --shadow-md: 0 4px 16px rgba(21,25,28,0.08);
+  --shadow-lg: 0 8px 32px rgba(21,25,28,0.1);
+  --shadow-xl: 0 16px 48px rgba(21,25,28,0.14);
+  --shadow-2xl: 0 24px 64px rgba(21,25,28,0.18);
+  --shadow-gold: 0 4px 20px rgba(201,164,92,0.25);
+  --shadow-inner: inset 0 2px 4px rgba(21,25,28,0.06);
+
+  /* ── Glassmorphism ── */
+  --glass-bg: rgba(255, 255, 255, 0.65);
+  --glass-bg-strong: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(255, 255, 255, 0.3);
+  --glass-blur: blur(16px);
+  --glass-blur-strong: blur(24px);
+
+  /* ── Transitions ── */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 500ms;
+  --duration-slower: 700ms;
+
+  --transition-base: all var(--duration-normal) var(--ease-out);
+  --transition-fast: all var(--duration-fast) var(--ease-out);
+  --transition-slow: all var(--duration-slow) var(--ease-out);
+  --transition-color: color var(--duration-normal) var(--ease-out),
+                      background-color var(--duration-normal) var(--ease-out),
+                      border-color var(--duration-normal) var(--ease-out);
+
+  /* ── Z-Index Scale ── */
+  --z-behind: -1;
+  --z-base: 0;
+  --z-above: 10;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-overlay: 300;
+  --z-modal: 400;
+  --z-toast: 500;
+  --z-max: 9999;
+}

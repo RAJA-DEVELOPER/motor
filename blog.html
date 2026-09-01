@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MotorSure Blog — Expert insights on motor insurance, vehicle documentation, RTO procedures, policy tips and automotive industry news.">
+  <title>Blog — MotorSure</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="css/variables.css"><link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/layout.css"><link rel="stylesheet" href="css/animations.css"><link rel="stylesheet" href="css/dark-mode.css"><link rel="stylesheet" href="css/rtl.css"><link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <header class="navbar" id="navbar" role="banner">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__brand" aria-label="MotorSure Home">
+        <div class="navbar__logo"><svg viewBox="0 0 24 24" fill="none" stroke="#15191C" stroke-width="1.7" width="24" height="24" aria-hidden="true"><path d="M12 2.8L18.8 6V12.2C18.8 16 12 20.8 12 20.8S5.2 16 5.2 12.2V6L12 2.8Z" stroke-linejoin="round"/><circle cx="12" cy="11.2" r="4.6" stroke-width="1.4"/><circle cx="12" cy="11.2" r="1.3" stroke-width="1.2"/><path d="M12 6.6V9.9M16 13.45L13.15 11.9M8 13.45L10.85 11.9" stroke-linecap="round" stroke-width="1.4"/></svg></div>
+        <div class="navbar__brand-name">
+          MotorSure
+          <span>Insurance & Docs</span>
+        </div>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <ul class="navbar__nav" role="menubar">
+          <li role="none"><a href="index.html" class="navbar__link" role="menuitem">Home</a></li>
+          <li role="none"><a href="home-2.html" class="navbar__link" role="menuitem">Home 2</a></li>
+          <li role="none"><a href="about.html" class="navbar__link" role="menuitem">About</a></li>
+          <li role="none"><a href="services.html" class="navbar__link" role="menuitem">Services</a></li>
+          <li role="none"><a href="blog.html" class="navbar__link active" role="menuitem">Blog</a></li>
+          <li role="none"><a href="contact.html" class="navbar__link" role="menuitem">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="navbar__actions">
+        <a href="contact.html" class="btn btn--primary btn--sm navbar__cta">Get a Quote</a>
+        <button class="navbar__toggle-btn" data-theme-toggle aria-label="Toggle dark mode">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="navbar__toggle-btn" data-rtl-toggle aria-label="Toggle RTL">LTR</button>
+        <button class="navbar__hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-menu__overlay" aria-hidden="true"></div>
+  <aside class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+    <button class="mobile-menu__close" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <ul class="mobile-menu__nav">
+      <li><a href="index.html" class="mobile-menu__link">Home</a></li>
+      <li><a href="home-2.html" class="mobile-menu__link">Home 2</a></li>
+      <li><a href="about.html" class="mobile-menu__link">About</a></li>
+      <li><a href="services.html" class="mobile-menu__link">Services</a></li>
+      <li><a href="blog.html" class="mobile-menu__link active">Blog</a></li>
+      <li><a href="contact.html" class="mobile-menu__link">Contact</a></li>
+    </ul>
+  </aside>
+
+  <main id="main-content">
+    <!-- ══ SECTION 1: Blog Hero ══ -->
+    <section class="page-hero" style="background-image:url('assets/images/blog-featured.jpg');" id="featured-post" aria-label="Blog Hero">
+      <div class="container">
+        <div class="page-hero__body">
+          <span class="page-hero__label">Insights &amp; Guides</span>
+          <h1>The MotorSure Blog</h1>
+          <p class="page-hero__lead">Expert insights on motor insurance, vehicle documentation, and RTO procedures — written to help you make confident, informed decisions.</p>
+          <div class="page-hero__actions">
+            <a href="#blog-grid-section" class="btn btn--primary btn--lg">Browse All Guides</a>
+            <a href="#blog-subscribe" class="btn btn--secondary btn--lg">Subscribe</a>
+          </div>
+          <ul class="page-hero__stats">
+            <li><strong>100+</strong><span>Guides Published</span></li>
+            <li><strong>25K+</strong><span>Monthly Readers</span></li>
+            <li><strong>Weekly</strong><span>New Updates</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ SECTION 2: Blog Grid ══ -->
+    <section class="section" id="blog-grid-section" aria-label="All Articles">
+      <div class="container">
+        <div class="section-header reveal"><span class="section-label">Latest Articles</span><h2>Insights & Guides</h2></div>
+        <div class="blog-grid grid grid-3 reveal" style="gap:var(--space-6);">
+          <article class="card hover-lift img-zoom"><img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=800&q=80" alt="Car insurance tips" class="card__image" loading="lazy"><div class="card__body"><span class="card__label">Insurance Tips</span><h3 class="card__title" style="font-size:var(--fs-h5);">5 Mistakes to Avoid When Renewing Your Car Insurance</h3><p class="card__text" style="font-size:var(--fs-small);">Don't let these common errors cost you money or leave you underinsured during renewal season.</p><a href="blog-details.html?post=renewal-mistakes" class="hover-underline" style="font-size:var(--fs-small);font-weight:var(--fw-semibold);">Read More →</a></div></article>
+          <article class="card hover-lift img-zoom"><img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=800&q=80" alt="Two-wheeler insurance guide" class="card__image" loading="lazy"><div class="card__body"><span class="card__label">Two-Wheeler</span><h3 class="card__title" style="font-size:var(--fs-h5);">Two-Wheeler Insurance: Comprehensive vs Third-Party Explained</h3><p class="card__text" style="font-size:var(--fs-small);">Understanding the key differences and which type of coverage is right for your riding needs.</p><a href="blog-details.html?post=two-wheeler-comprehensive-vs-third-party" class="hover-underline" style="font-size:var(--fs-small);font-weight:var(--fw-semibold);">Read More →</a></div></article>
+          <article class="card hover-lift img-zoom"><img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&w=800&q=80" alt="RC transfer documents on desk" class="card__image" loading="lazy"><div class="card__body"><span class="card__label">Documentation</span><h3 class="card__title" style="font-size:var(--fs-h5);">RC Transfer Process in Maharashtra: A Step-by-Step Guide</h3><p class="card__text" style="font-size:var(--fs-small);">Everything you need to know about transferring vehicle registration in Maharashtra.</p><a href="blog-details.html?post=rc-transfer-maharashtra" class="hover-underline" style="font-size:var(--fs-small);font-weight:var(--fw-semibold);">Read More →</a></div></article>
+          <article class="card hover-lift img-zoom"><img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=800&q=80" alt="PUC compliance" class="card__image" loading="lazy"><div class="card__body"><span class="card__label">Compliance</span><h3 class="card__title" style="font-size:var(--fs-h5);">PUC Certificate: Why It Matters & How to Stay Compliant</h3><p class="card__text" style="font-size:var(--fs-small);">Avoid hefty fines — learn about PUC requirements, validity, and where to get tested.</p><a href="blog-details.html?post=puc-certificate-guide" class="hover-underline" style="font-size:var(--fs-small);font-weight:var(--fw-semibold);">Read More →</a></div></article>
+          <article class="card hover-lift img-zoom"><img src="https://images.unsplash.com/photo-1613214149922-f1809c99b414?auto=format&fit=crop&w=800&q=80" alt="Fitness certificate guide" class="card__image" loading="lazy"><div class="card__body"><span class="card__label">Regulations</span><h3 class="card__title" style="font-size:var(--fs-h5);">Vehicle Fitness Certificate: New 2024 Rules & Requirements</h3><p class="card__text" style="font-size:var(--fs-small);">Updated regulations now require fitness certificates for personal vehicles over 15 years old.</p><a href="blog-details.html?post=fitness-certificate-2024" class="hover-underline" style="font-size:var(--fs-small);font-weight:var(--fw-semibold);">Read More →</a></div></article>
+          <article class="card hover-lift"><div class="card__body" style="display:flex;flex-direction:column;justify-content:center;align-items:center;min-height:300px;background:var(--gradient-gold-subtle);"><svg viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.5" width="48" height="48" style="margin-bottom:var(--space-4);"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg><h3 style="margin-bottom:var(--space-2);">More Coming Soon</h3><p style="font-size:var(--fs-small);text-align:center;">We publish new guides and insights every week. Stay tuned!</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ SECTION 3: Categories ══ -->
+    <section class="section section--mist" id="categories" aria-label="Blog Categories">
+      <div class="container">
+        <div class="section-header reveal"><span class="section-label">Browse by Topic</span><h2>Categories</h2></div>
+        <div class="grid grid-4 reveal" style="gap:var(--space-4);">
+          <a href="#" class="card hover-lift" style="text-align:center;padding:var(--space-6);text-decoration:none;"><h4 style="color:var(--color-heading);margin-bottom:var(--space-2);">Insurance Tips</h4><span style="font-size:var(--fs-caption);color:var(--color-accent);">8 articles</span></a>
+          <a href="#" class="card hover-lift" style="text-align:center;padding:var(--space-6);text-decoration:none;"><h4 style="color:var(--color-heading);margin-bottom:var(--space-2);">Documentation</h4><span style="font-size:var(--fs-caption);color:var(--color-accent);">6 articles</span></a>
+          <a href="#" class="card hover-lift" style="text-align:center;padding:var(--space-6);text-decoration:none;"><h4 style="color:var(--color-heading);margin-bottom:var(--space-2);">Regulations</h4><span style="font-size:var(--fs-caption);color:var(--color-accent);">4 articles</span></a>
+          <a href="#" class="card hover-lift" style="text-align:center;padding:var(--space-6);text-decoration:none;"><h4 style="color:var(--color-heading);margin-bottom:var(--space-2);">Industry News</h4><span style="font-size:var(--fs-caption);color:var(--color-accent);">5 articles</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ SECTION 4: Popular Posts ══ -->
+    <section class="section" id="popular-posts" aria-label="Popular Posts">
+      <div class="container">
+        <div class="section-header reveal"><span class="section-label">Trending</span><h2>Most Read Articles</h2></div>
+        <div class="grid grid-2 reveal" style="gap:var(--space-6);">
+          <a href="blog-details.html?post=no-claim-bonus" class="card hover-lift" style="display:flex;text-decoration:none;"><img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=800&q=80" alt="Steering wheel and dashboard" style="width:200px;height:160px;object-fit:cover;flex-shrink:0;" loading="lazy"><div class="card__body" style="display:flex;flex-direction:column;justify-content:center;"><span class="card__label">Insurance</span><h4 style="margin-bottom:var(--space-2);color:var(--color-heading);font-size:var(--fs-body-lg);">How No-Claim Bonus Works & How to Maximize It</h4><span style="font-size:var(--fs-caption);color:var(--color-text-muted);">Jul 28, 2024 · 6 min</span></div></a>
+          <a href="blog-details.html?post=used-bike-insurance" class="card hover-lift" style="display:flex;text-decoration:none;"><img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=800&q=80" alt="Motorcycle rider" style="width:200px;height:160px;object-fit:cover;flex-shrink:0;" loading="lazy"><div class="card__body" style="display:flex;flex-direction:column;justify-content:center;"><span class="card__label">Buying Guide</span><h4 style="margin-bottom:var(--space-2);color:var(--color-heading);font-size:var(--fs-body-lg);">Buying a Used Bike? Don't Skip These Insurance Steps</h4><span style="font-size:var(--fs-caption);color:var(--color-text-muted);">Jul 15, 2024 · 5 min</span></div></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ SECTION 5: Author Spotlight ══ -->
+    <section class="section section--mist" id="author-spotlight" aria-label="Author Spotlight">
+      <div class="container container--narrow">
+        <div class="reveal" style="display:flex;align-items:center;gap:var(--space-10);background:var(--color-bg-card);padding:var(--space-10);border-radius:var(--radius-xl);border:1px solid var(--color-border);">
+          <div style="width:120px;height:120px;border-radius:50%;background:var(--gradient-teal);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><span style="font-size:2.5rem;color:var(--ivory);font-family:var(--font-heading);">VK</span></div>
+          <div>
+            <span class="badge badge--gold" style="margin-bottom:var(--space-3);">Lead Author</span>
+            <h3 style="margin-bottom:var(--space-2);">Vikram Khanna</h3>
+            <p style="font-size:var(--fs-small);color:var(--color-text-secondary);margin-bottom:var(--space-4);">Founder of MotorSure and a 20-year veteran of the insurance industry. Vikram writes about motor insurance trends, regulatory updates, and practical tips to help vehicle owners make informed decisions.</p>
+            <div style="display:flex;gap:var(--space-4);align-items:center;"><span style="font-size:var(--fs-caption);color:var(--color-accent);font-weight:var(--fw-semibold);">23 Articles Published</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ SECTION 6: Blog Newsletter ══ -->
+    <section class="section" id="blog-subscribe" aria-label="Subscribe">
+      <div class="container container--narrow" style="text-align:center;">
+        <div class="reveal">
+          <span class="section-label">Never Miss a Post</span>
+          <h2 style="margin-bottom:var(--space-4);">Subscribe to Our Blog</h2>
+          <p style="margin-bottom:var(--space-8);max-width:480px;margin-left:auto;margin-right:auto;">Get weekly insurance tips, documentation guides, and regulatory updates straight to your inbox.</p>
+          <form data-validate style="display:flex;gap:var(--space-3);max-width:480px;margin:0 auto;">
+            <div class="form-group" style="flex:1;margin-bottom:0;"><input type="email" class="form-input" placeholder="your@email.com" required data-validate-type="email" aria-label="Email"></div>
+            <button type="submit" class="btn btn--primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <!-- Column 1: Brand -->
+        <div>
+          <div class="footer__brand">
+            <div class="footer__logo"><svg viewBox="0 0 24 24" fill="none" stroke="#15191C" stroke-width="1.7" width="24" height="24" aria-hidden="true"><path d="M12 2.8L18.8 6V12.2C18.8 16 12 20.8 12 20.8S5.2 16 5.2 12.2V6L12 2.8Z" stroke-linejoin="round"/><circle cx="12" cy="11.2" r="4.6" stroke-width="1.4"/><circle cx="12" cy="11.2" r="1.3" stroke-width="1.2"/><path d="M12 6.6V9.9M16 13.45L13.15 11.9M8 13.45L10.85 11.9" stroke-linecap="round" stroke-width="1.4"/></svg></div>
+            <div class="footer__brand-name">MotorSure</div>
+          </div>
+          <p class="footer__about">Your trusted partner for comprehensive motor insurance and vehicle documentation services. Serving vehicle owners across India with integrity and excellence since 2012.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+            <a href="#" class="footer__social-link" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+            <a href="#" class="footer__social-link" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" class="footer__social-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg></a>
+          </div>
+        </div>
+        <!-- Column 2: Quick Links -->
+        <div>
+          <h3 class="footer__heading">Quick Links</h3><ul class="footer__links"><li><a href="index.html">Home</a></li><li><a href="home-2.html">Home 2</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul>
+        </div>
+        <!-- Column 3: Services -->
+        <div>
+          <h3 class="footer__heading">Services</h3>
+          <ul class="footer__links">
+            <li><a href="services.html">New Insurance</a></li>
+            <li><a href="services.html">Policy Renewal</a></li>
+            <li><a href="services.html">RC Transfer</a></li>
+            <li><a href="services.html">Fitness Certificate</a></li>
+            <li><a href="services.html">PUC Assistance</a></li>
+            <li><a href="services.html">Document Checklists</a></li>
+          </ul>
+        </div>
+        <!-- Column 4: Contact -->
+        <div>
+          <h3 class="footer__heading">Contact Us</h3>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>42 Mahatma Gandhi Road,<br>Andheri West, Mumbai 400058</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            <span>+91 98765 43210<br>+91 22 2634 5678</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>info@motorsure.in<br>support@motorsure.in</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2024 MotorSure. All rights reserved.</p>
+        <ul class="footer__bottom-links">
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+          <li><a href="sitemap.html">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <button class="back-to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg></button>
+  <script src="js/theme.js"></script><script src="js/rtl.js"></script><script src="js/navbar.js"></script><script src="js/slider.js"></script><script src="js/scroll-reveal.js"></script><script src="js/accordion.js"></script><script src="js/forms.js"></script><script src="js/back-to-top.js"></script><script src="js/page-transitions.js"></script><script src="js/lazy-load.js"></script><script src="js/app.js"></script>
+</body>
+</html>
