@@ -103,10 +103,11 @@ const FormValidator = {
   handleSubmit(form) {
     const submitBtn = form.querySelector('[type="submit"]');
     const originalText = submitBtn?.textContent;
+    const isLoginForm = form.closest('.login-page') !== null || form.closest('.login-modal') !== null || form.classList.contains('login-modal__form');
 
     if (submitBtn) {
       submitBtn.disabled = true;
-      submitBtn.textContent = 'Sending...';
+      submitBtn.textContent = isLoginForm ? 'Signing in...' : 'Sending...';
     }
 
     // Simulate submission
@@ -117,9 +118,14 @@ const FormValidator = {
         submitBtn.textContent = originalText;
       }
 
-      // Show success message
-      this.showToast('Thank you! Your message has been sent successfully.');
-    }, 1500);
+      if (isLoginForm) {
+        // Redirect to home page after successful sign-in
+        window.location.href = 'index.html';
+      } else {
+        // Show success message
+        this.showToast('Thank you! Your message has been sent successfully.');
+      }
+    }, isLoginForm ? 800 : 1500);
   },
 
   showToast(message) {

@@ -55,6 +55,10 @@
       </nav>
 
       <div class="navbar__actions">
+        <a href="login.html" class="btn btn--ghost btn--sm navbar__login" data-login-trigger aria-label="Login">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          Login
+        </a>
         <a href="contact.html" class="btn btn--primary btn--sm navbar__cta">Get a Quote</a>
         <button class="navbar__toggle-btn" data-theme-toggle aria-label="Toggle dark mode">
           <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
@@ -82,6 +86,13 @@
       <li><a href="blog.html" class="mobile-menu__link">Blog</a></li>
       <li><a href="contact.html" class="mobile-menu__link">Contact</a></li>
     </ul>
+    <div class="mobile-menu__actions">
+      <a href="login.html" class="btn btn--ghost" style="width:100%;justify-content:center;" data-login-trigger>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        Login
+      </a>
+      <a href="contact.html" class="btn btn--primary" style="width:100%;justify-content:center;">Get a Quote</a>
+    </div>
   </aside>
 
   <!-- ═══════════════════════════════════════════ -->
@@ -112,7 +123,7 @@
           <div class="hero-slide__overlay"></div>
           <div class="hero-slide__content">
             <span class="hero-slide__label">Two-Wheeler Protection</span>
-            <h2 class="hero-slide__title" style="font-size:var(--fs-display);color:var(--ivory)">Complete Two-Wheeler Insurance Solutions</h2>
+            <h2 class="hero-slide__title">Complete Two-Wheeler Insurance Solutions</h2>
             <p class="hero-slide__text">From sports bikes to daily commuters — get instant policy issuance, hassle-free renewals and 24/7 claim assistance for your two-wheeler.</p>
             <div class="hero-slide__actions">
               <a href="services.html" class="btn btn--primary btn--lg">View Plans</a>
@@ -126,7 +137,7 @@
           <div class="hero-slide__overlay"></div>
           <div class="hero-slide__content">
             <span class="hero-slide__label">Vehicle Documentation</span>
-            <h2 class="hero-slide__title" style="font-size:var(--fs-display);color:var(--ivory)">RC Transfer, Fitness & PUC — All Under One Roof</h2>
+            <h2 class="hero-slide__title">RC Transfer, Fitness & PUC — All Under One Roof</h2>
             <p class="hero-slide__text">Streamlined document processing for RC transfers, fitness certificates, PUC compliance and more. Walk-in or book home collection today.</p>
             <div class="hero-slide__actions">
               <a href="services.html" class="btn btn--primary btn--lg">Start Now</a>
@@ -151,9 +162,9 @@
     </section>
 
     <!-- ══ SECTION 2: Trust Bar ══ -->
-    <section class="section section--dark" id="trust-bar" aria-label="Statistics">
+    <section class="section section--dark" id="trust-bar" aria-label="Statistics" style="padding: var(--space-8) 0;">
       <div class="container">
-        <div class="trust-bar__grid grid" style="grid-template-columns: repeat(4, 1fr); text-align:center;">
+        <div class="trust-bar__grid grid" style="grid-template-columns: repeat(4, 1fr); text-align:center; gap: var(--space-4);">
           <div class="stat reveal reveal-delay-1">
             <span class="stat__number" data-count="15000" data-suffix="+">0</span>
             <span class="stat__label">Policies Issued</span>
@@ -180,58 +191,125 @@
         <div class="section-header reveal">
           <span class="section-label">What We Offer</span>
           <h2>Comprehensive Motor Services</h2>
-          <p>From new insurance policies to essential vehicle documentation, we handle every aspect of your motor needs with precision and care.</p>
+          <p>Tailored motor insurance for <strong>bikes (two-wheelers)</strong> &amp; <strong>cars (four-wheelers)</strong> — comprehensive, third-party &amp; zero-dep plans — plus RC transfer, fitness &amp; PUC documentation.</p>
         </div>
 
         <div class="grid grid-3" style="gap:var(--space-6);">
-          <!-- Service 1 -->
-          <div class="service-card reveal reveal-delay-1">
-            <div class="service-card__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          <!-- Service 1: Bike Insurance — Two-Wheeler -->
+          <article class="card hover-lift img-zoom reveal reveal-delay-1" style="overflow:hidden; display:flex; flex-direction:column;">
+            <div style="position:relative; height:200px; overflow:hidden; flex-shrink:0;">
+              <img src="https://images.pexels.com/photos/2116475/pexels-photo-2116475.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Black cruiser motorcycle at sunset for bike insurance - relevant two-wheeler motorbike" class="card__image" style="height:100%; width:100%; object-fit:cover; display:block;" loading="lazy">
+              <span style="position:absolute; top:var(--space-3); left:var(--space-3); background:var(--obsidian); color:var(--ivory); padding:4px 10px; border-radius:var(--radius-sm); font-size:var(--fs-caption); font-weight:var(--fw-bold); letter-spacing:var(--ls-wide); display:inline-flex; align-items:center; gap:6px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="14" height="14" aria-hidden="true"><path d="M5 18l2-5h4l2 5"/><circle cx="7.5" cy="18" r="2.5"/><circle cx="16.5" cy="18" r="2.5"/><path d="M11 13l2-4h3l2 4"/></svg> TWO-WHEELER
+              </span>
+              <span style="position:absolute; bottom:var(--space-3); right:var(--space-3); background:var(--gradient-gold); color:var(--obsidian); padding:4px 10px; border-radius:var(--radius-sm); font-size:var(--fs-caption); font-weight:var(--fw-bold);">From ₹1,150/yr</span>
             </div>
-            <h3 class="service-card__title">New Insurance</h3>
-            <p class="service-card__text">Get instant comprehensive or third-party motor insurance for two-wheelers and four-wheelers from top insurers at the best premiums.</p>
-          </div>
-          <!-- Service 2 -->
-          <div class="service-card reveal reveal-delay-2">
-            <div class="service-card__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+            <div class="card__body" style="padding:var(--space-6); flex:1; display:flex; flex-direction:column;">
+              <span class="card__label" style="margin-bottom:var(--space-2);">Bike Insurance</span>
+              <h3 class="card__title" style="font-size:var(--fs-h5); margin-bottom:var(--space-2); display:flex; align-items:center; gap:8px;">
+                <span style="width:28px; height:28px; border-radius:var(--radius-sm); background:var(--gradient-gold-subtle); display:flex; align-items:center; justify-content:center; color:var(--color-accent); flex-shrink:0;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="16" height="16"><path d="M5 18l2-5h4l2 5"/><circle cx="7.5" cy="18" r="2.5"/><circle cx="16.5" cy="18" r="2.5"/></svg></span>
+                Bike Insurance
+              </h3>
+              <p class="card__text" style="font-size:var(--fs-small); margin-bottom:var(--space-4); flex:none;">For motorcycles, scooters & mopeds — own damage, theft, fire, third-party liability & PA cover ₹15 Lakh.</p>
+              <ul style="list-style:none; padding:0; margin:0 0 var(--space-4); display:flex; flex-direction:column; gap:6px; font-size:var(--fs-small); color:var(--color-text-secondary);">
+                <li style="display:flex; align-items:center; gap:8px;"><span style="width:6px; height:6px; border-radius:50%; background:var(--color-accent); flex-shrink:0;"></span> <strong>Third-Party:</strong>&nbsp;₹1,150/yr (mandatory)</li>
+                <li style="display:flex; align-items:center; gap:8px;"><span style="width:6px; height:6px; border-radius:50%; background:var(--color-accent); flex-shrink:0;"></span> <strong>Comprehensive:</strong>&nbsp;₹2,400/yr</li>
+                <li style="display:flex; align-items:center; gap:8px;"><span style="width:6px; height:6px; border-radius:50%; background:var(--color-success); flex-shrink:0;"></span> <strong>Ultimate (Zero Dep + RSA):</strong>&nbsp;₹4,100/yr</li>
+              </ul>
+              <p style="font-size:var(--fs-caption); color:var(--color-text-muted); margin:0 0 var(--space-5); line-height:1.5;">Add-ons: Zero depreciation, roadside assistance, engine protect, pillion & consumables cover.</p>
+              <a href="services.html" class="btn btn--ghost btn--sm" style="margin-top:auto; width:100%; justify-content:center;">View Bike Plans →</a>
             </div>
-            <h3 class="service-card__title">Policy Renewal</h3>
-            <p class="service-card__text">Seamless policy renewal with no-claim bonus protection, timely reminders, and assistance in choosing the best renewal plan for your vehicle.</p>
-          </div>
-          <!-- Service 3 -->
-          <div class="service-card reveal reveal-delay-3">
-            <div class="service-card__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+          </article>
+
+          <!-- Service 2: Car Insurance — Four-Wheeler -->
+          <article class="card hover-lift img-zoom reveal reveal-delay-2" style="overflow:hidden; display:flex; flex-direction:column;">
+            <div style="position:relative; height:200px; overflow:hidden; flex-shrink:0;">
+              <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=800&q=80" alt="Premium white luxury car front view for four-wheeler car insurance - relevant for car" class="card__image" style="height:100%; width:100%; object-fit:cover; display:block;" loading="lazy">
+              <span style="position:absolute; top:var(--space-3); left:var(--space-3); background:var(--teal); color:var(--ivory); padding:4px 10px; border-radius:var(--radius-sm); font-size:var(--fs-caption); font-weight:var(--fw-bold); letter-spacing:var(--ls-wide); display:inline-flex; align-items:center; gap:6px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="14" height="14" aria-hidden="true"><path d="M5 11l1-4h12l1 4"/><circle cx="7.5" cy="16" r="2"/><circle cx="16.5" cy="16" r="2"/><path d="M5 11v4h14v-4"/></svg> FOUR-WHEELER
+              </span>
+              <span style="position:absolute; bottom:var(--space-3); right:var(--space-3); background:var(--gradient-gold); color:var(--obsidian); padding:4px 10px; border-radius:var(--radius-sm); font-size:var(--fs-caption); font-weight:var(--fw-bold);">From ₹3,200/yr</span>
             </div>
-            <h3 class="service-card__title">RC Transfer</h3>
-            <p class="service-card__text">Hassle-free Registration Certificate transfer for vehicle ownership changes. Complete documentation support with RTO coordination.</p>
-          </div>
-          <!-- Service 4 -->
-          <div class="service-card reveal reveal-delay-4">
-            <div class="service-card__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+            <div class="card__body" style="padding:var(--space-6); flex:1; display:flex; flex-direction:column;">
+              <span class="card__label" style="margin-bottom:var(--space-2);">Car Insurance</span>
+              <h3 class="card__title" style="font-size:var(--fs-h5); margin-bottom:var(--space-2); display:flex; align-items:center; gap:8px;">
+                <span style="width:28px; height:28px; border-radius:var(--radius-sm); background:var(--gradient-gold-subtle); display:flex; align-items:center; justify-content:center; color:var(--color-accent); flex-shrink:0;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="16" height="16"><path d="M5 11l1-4h12l1 4"/><circle cx="7.5" cy="16" r="2"/><circle cx="16.5" cy="16" r="2"/></svg></span>
+                Car Insurance
+              </h3>
+              <p class="card__text" style="font-size:var(--fs-small); margin-bottom:var(--space-4); flex:none;">For hatchbacks, sedans, SUVs & MUVs — own damage, theft, fire, natural calamity, third-party & PA ₹15 Lakh.</p>
+              <ul style="list-style:none; padding:0; margin:0 0 var(--space-4); display:flex; flex-direction:column; gap:6px; font-size:var(--fs-small); color:var(--color-text-secondary);">
+                <li style="display:flex; align-items:center; gap:8px;"><span style="width:6px; height:6px; border-radius:50%; background:var(--color-accent); flex-shrink:0;"></span> <strong>Third-Party:</strong>&nbsp;₹3,200/yr</li>
+                <li style="display:flex; align-items:center; gap:8px;"><span style="width:6px; height:6px; border-radius:50%; background:var(--color-accent); flex-shrink:0;"></span> <strong>Comprehensive:</strong>&nbsp;₹8,500/yr</li>
+                <li style="display:flex; align-items:center; gap:8px;"><span style="width:6px; height:6px; border-radius:50%; background:var(--color-success); flex-shrink:0;"></span> <strong>Premium Shield:</strong>&nbsp;₹12,800/yr</li>
+              </ul>
+              <p style="font-size:var(--fs-caption); color:var(--color-text-muted); margin:0 0 var(--space-5); line-height:1.5;">Add-ons: Zero depreciation, RSA, engine protection & return-to-invoice guarantee.</p>
+              <a href="services.html" class="btn btn--ghost btn--sm" style="margin-top:auto; width:100%; justify-content:center;">View Car Plans →</a>
             </div>
-            <h3 class="service-card__title">Fitness Certificate</h3>
-            <p class="service-card__text">Timely fitness certificate procurement and renewal for commercial and transport vehicles. We manage inspections and paperwork end-to-end.</p>
-          </div>
-          <!-- Service 5 -->
-          <div class="service-card reveal reveal-delay-5">
-            <div class="service-card__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+          </article>
+
+          <!-- Service 3: Policy Renewal — Both -->
+          <article class="card hover-lift img-zoom reveal reveal-delay-3" style="overflow:hidden; display:flex; flex-direction:column;">
+            <div style="position:relative; height:200px; overflow:hidden; flex-shrink:0;">
+              <img src="https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Person signing insurance renewal document with pen on clipboard - relevant renewal for bike and car" class="card__image" style="height:100%; width:100%; object-fit:cover; display:block;" loading="lazy">
+              <span style="position:absolute; top:var(--space-3); left:var(--space-3); background:rgba(21,25,28,0.85); color:var(--ivory); padding:4px 10px; border-radius:var(--radius-sm); font-size:var(--fs-caption); font-weight:var(--fw-bold); letter-spacing:var(--ls-wide); backdrop-filter:blur(6px);">BIKE & CAR</span>
             </div>
-            <h3 class="service-card__title">PUC Assistance</h3>
-            <p class="service-card__text">Pollution Under Control certificate support — locate nearest PUC centers, track validity, and get renewal reminders automatically.</p>
-          </div>
-          <!-- Service 6 -->
-          <div class="service-card reveal reveal-delay-6">
-            <div class="service-card__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/></svg>
+            <div class="card__body" style="padding:var(--space-6); flex:1; display:flex; flex-direction:column;">
+              <span class="card__label">Renewal</span>
+              <h3 class="card__title" style="font-size:var(--fs-h5); margin-bottom:var(--space-2);">Policy Renewal</h3>
+              <p class="card__text" style="font-size:var(--fs-small); margin-bottom:var(--space-3);">On-time renewal for bikes & cars with NCB protection up to 50%, timely reminders & premium comparison across 50+ insurers.</p>
+              <div style="display:grid; grid-template-columns:1fr 1fr; gap:var(--space-3); margin-bottom:var(--space-4); padding:var(--space-3); background:var(--color-bg-section); border-radius:var(--radius-md);">
+                <div style="text-align:center;"><span style="display:block; font-size:var(--fs-caption); font-weight:var(--fw-bold); color:var(--color-accent);">BIKE</span><span style="font-size:var(--fs-caption); color:var(--color-text-secondary);">Save up to 50% NCB</span></div>
+                <div style="text-align:center; border-left:1px solid var(--color-border);"><span style="display:block; font-size:var(--fs-caption); font-weight:var(--fw-bold); color:var(--teal);">CAR</span><span style="font-size:var(--fs-caption); color:var(--color-text-secondary);">Save up to 50% NCB</span></div>
+              </div>
+              <p style="font-size:var(--fs-caption); color:var(--color-text-muted); margin:0 0 var(--space-5);">Same-day issuance • Avoid inspection if renewed within 90 days • Instant certificate.</p>
+              <a href="services.html" class="btn btn--ghost btn--sm" style="margin-top:auto; width:100%; justify-content:center;">Renew Now →</a>
             </div>
-            <h3 class="service-card__title">Document Checklists</h3>
-            <p class="service-card__text">Never miss a required document again. Access our comprehensive downloadable checklists for every vehicle service and procedure.</p>
-          </div>
+          </article>
+
+          <!-- Service 4: RC Transfer -->
+          <article class="card hover-lift img-zoom reveal reveal-delay-4" style="overflow:hidden; display:flex; flex-direction:column;">
+            <div style="position:relative; height:200px; overflow:hidden; flex-shrink:0;">
+              <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=800&q=80" alt="Hands exchanging vehicle RC document and keys for RC transfer - relevant ownership change" class="card__image" style="height:100%; width:100%; object-fit:cover; display:block;" loading="lazy">
+              <span style="position:absolute; top:var(--space-3); left:var(--space-3); background:rgba(255,255,255,0.92); color:var(--obsidian); padding:4px 10px; border-radius:var(--radius-sm); font-size:var(--fs-caption); font-weight:var(--fw-bold);">RTO SERVICES</span>
+            </div>
+            <div class="card__body" style="padding:var(--space-6); flex:1; display:flex; flex-direction:column;">
+              <span class="card__label">Documentation</span>
+              <h3 class="card__title" style="font-size:var(--fs-h5); margin-bottom:var(--space-2);">RC Transfer</h3>
+              <p class="card__text" style="font-size:var(--fs-small); margin-bottom:var(--space-4);">Hassle-free ownership transfer for bikes & cars — Form 29/30, NOC, RTO submission, inspection & new RC delivery.</p>
+              <p style="font-size:var(--fs-caption); color:var(--color-text-muted); margin:0 0 var(--space-5);">Within-state 15–30 days • Inter-state 30–60 days • Home collection available.</p>
+              <a href="services.html" class="btn btn--ghost btn--sm" style="margin-top:auto; width:100%; justify-content:center;">Learn More →</a>
+            </div>
+          </article>
+
+          <!-- Service 5: Fitness Certificate -->
+          <article class="card hover-lift img-zoom reveal reveal-delay-5" style="overflow:hidden; display:flex; flex-direction:column;">
+            <div style="position:relative; height:200px; overflow:hidden; flex-shrink:0;">
+              <img src="https://images.pexels.com/photos/3806288/pexels-photo-3806288.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Mechanic performing wheel alignment inspection for vehicle fitness certificate - relevant fitness testing" class="card__image" style="height:100%; width:100%; object-fit:cover; display:block;" loading="lazy">
+              <span style="position:absolute; top:var(--space-3); left:var(--space-3); background:rgba(255,255,255,0.92); color:var(--obsidian); padding:4px 10px; border-radius:var(--radius-sm); font-size:var(--fs-caption); font-weight:var(--fw-bold);">15+ YEARS</span>
+            </div>
+            <div class="card__body" style="padding:var(--space-6); flex:1; display:flex; flex-direction:column;">
+              <span class="card__label">Fitness</span>
+              <h3 class="card__title" style="font-size:var(--fs-h5); margin-bottom:var(--space-2);">Fitness Certificate</h3>
+              <p class="card__text" style="font-size:var(--fs-small); margin-bottom:var(--space-4);">For commercial vehicles & 15+ year old bikes/cars — inspection scheduling, form filing & certificate delivery.</p>
+              <p style="font-size:var(--fs-caption); color:var(--color-text-muted); margin:0 0 var(--space-5);">7–15 working days • We handle RTO inspection end-to-end.</p>
+              <a href="services.html" class="btn btn--ghost btn--sm" style="margin-top:auto; width:100%; justify-content:center;">Learn More →</a>
+            </div>
+          </article>
+
+          <!-- Service 6: PUC & Document Checklists -->
+          <article class="card hover-lift img-zoom reveal reveal-delay-6" style="overflow:hidden; display:flex; flex-direction:column;">
+            <div style="position:relative; height:200px; overflow:hidden; flex-shrink:0;">
+              <img src="https://images.pexels.com/photos/2244746/pexels-photo-2244746.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Car exhaust pipe emission smoke for PUC pollution control - relevant PUC certificate" class="card__image" style="height:100%; width:100%; object-fit:cover; display:block;" loading="lazy">
+              <span style="position:absolute; top:var(--space-3); left:var(--space-3); background:rgba(255,255,255,0.92); color:var(--obsidian); padding:4px 10px; border-radius:var(--radius-sm); font-size:var(--fs-caption); font-weight:var(--fw-bold);">COMPLIANCE</span>
+            </div>
+            <div class="card__body" style="padding:var(--space-6); flex:1; display:flex; flex-direction:column;">
+              <span class="card__label">PUC & Docs</span>
+              <h3 class="card__title" style="font-size:var(--fs-h5); margin-bottom:var(--space-2);">PUC & Checklists</h3>
+              <p class="card__text" style="font-size:var(--fs-small); margin-bottom:var(--space-4);">Stay compliant — PUC validity tracking for bikes/cars, nearest center locator & renewal reminders. Plus downloadable checklists.</p>
+              <p style="font-size:var(--fs-caption); color:var(--color-text-muted); margin:0 0 var(--space-5);">PUC from ₹100 govt fee • 6 months / 1 year validity • Avoid ₹10,000 fine.</p>
+              <a href="services.html" class="btn btn--ghost btn--sm" style="margin-top:auto; width:100%; justify-content:center;">View Checklist →</a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -323,7 +401,7 @@
             </div>
             <p class="testimonial-card__quote">"MotorSure made my car insurance renewal incredibly simple. The entire process was completed in under 30 minutes, and they secured me a better premium than my previous insurer."</p>
             <div class="testimonial-card__author">
-              <div style="width:48px;height:48px;border-radius:50%;background:var(--gradient-teal);display:flex;align-items:center;justify-content:center;color:var(--ivory);font-weight:700;font-size:1.1rem;flex-shrink:0;">RS</div>
+              <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Rajesh Sharma — Business Owner, Mumbai" class="testimonial-card__avatar" loading="lazy" style="width:48px;height:48px;border-radius:50%;object-fit:cover;border:2px solid var(--color-accent);flex-shrink:0;">
               <div>
                 <div class="testimonial-card__name">Rajesh Sharma</div>
                 <div class="testimonial-card__role">Business Owner, Mumbai</div>
@@ -341,7 +419,7 @@
             </div>
             <p class="testimonial-card__quote">"Needed an urgent RC transfer and their team handled everything — from document collection at my home to RTO submission. Absolutely professional service."</p>
             <div class="testimonial-card__author">
-              <div style="width:48px;height:48px;border-radius:50%;background:var(--gradient-gold);display:flex;align-items:center;justify-content:center;color:var(--obsidian);font-weight:700;font-size:1.1rem;flex-shrink:0;">PM</div>
+              <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Priya Mehta — IT Professional, Pune" class="testimonial-card__avatar" loading="lazy" style="width:48px;height:48px;border-radius:50%;object-fit:cover;border:2px solid var(--color-accent);flex-shrink:0;">
               <div>
                 <div class="testimonial-card__name">Priya Mehta</div>
                 <div class="testimonial-card__role">IT Professional, Pune</div>
@@ -359,7 +437,7 @@
             </div>
             <p class="testimonial-card__quote">"As a fleet owner with 20+ vehicles, MotorSure manages all my insurance, fitness certificates and PUC renewals. They save me countless hours every month."</p>
             <div class="testimonial-card__author">
-              <div style="width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,#174A4A,#C9A45C);display:flex;align-items:center;justify-content:center;color:var(--ivory);font-weight:700;font-size:1.1rem;flex-shrink:0;">AK</div>
+              <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Amit Kumar — Fleet Owner, Delhi" class="testimonial-card__avatar" loading="lazy" style="width:48px;height:48px;border-radius:50%;object-fit:cover;border:2px solid var(--color-accent);flex-shrink:0;">
               <div>
                 <div class="testimonial-card__name">Amit Kumar</div>
                 <div class="testimonial-card__role">Fleet Owner, Delhi</div>
@@ -471,6 +549,7 @@
   <script src="js/back-to-top.js"></script>
   <script src="js/page-transitions.js"></script>
   <script src="js/lazy-load.js"></script>
+  <script src="js/login.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

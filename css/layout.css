@@ -154,6 +154,26 @@
   margin-right: var(--space-2);
 }
 
+.navbar__login {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-weight: var(--fw-semibold);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.navbar__login svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+/* Login button subtle divider */
+.navbar__actions .navbar__login + .navbar__cta {
+  margin-left: var(--space-1);
+}
+
 /* Hamburger */
 .navbar__hamburger {
   display: none;
@@ -257,7 +277,8 @@
 
 .mobile-menu__actions {
   display: flex;
-  gap: var(--space-4);
+  flex-direction: column;
+  gap: var(--space-3);
   margin-bottom: var(--space-8);
 }
 

@@ -161,9 +161,14 @@
     height: 180px;
   }
 
-  /* Trust bar stats */
+  /* Trust bar stats — reduced height */
+  #trust-bar {
+    padding: var(--space-6) 0 !important;
+  }
+
   .trust-bar__grid {
     grid-template-columns: repeat(2, 1fr) !important;
+    gap: var(--space-3) !important;
   }
 
   /* Timeline vertical only */
@@ -171,15 +176,58 @@
     flex-direction: column;
   }
 
-  /* Tabs scrollable */
+  /* Tabs — Home2 Insurance Plans scroll removed (no horizontal scroll) */
   .tabs {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
+    overflow-x: visible;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  .tabs::-webkit-scrollbar {
-    display: none;
+  #vehicle-tabs .tabs {
+    overflow-x: hidden;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-width: 0;
+  }
+
+  #vehicle-tabs {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
+  #vehicle-tabs .container {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
+  #vehicle-tabs .tab-panel .grid {
+    overflow: hidden;
+    max-width: 100%;
+  }
+
+  #vehicle-tabs .card {
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  /* Hide right-corner scrollbar deeply for Home2 Insurance Plans */
+  #vehicle-tabs::-webkit-scrollbar,
+  #vehicle-tabs .tabs::-webkit-scrollbar,
+  #vehicle-tabs .tab-panel::-webkit-scrollbar,
+  #vehicle-tabs .container::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+  }
+  #vehicle-tabs {
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+  }
+  html, body {
+    overflow-x: hidden !important;
+  }
+  ::-webkit-scrollbar-corner {
+    background: transparent !important;
   }
 
   /* Blog grid */
@@ -198,6 +246,11 @@
     right: var(--space-5);
     width: 42px;
     height: 42px;
+  }
+
+  /* Interest / Insurance Plans — image wrapper responsive */
+  #vehicle-tabs .card > div:first-of-type {
+    height: 180px !important;
   }
 
   /* How it works cards */
@@ -498,32 +551,77 @@
     --section-padding: clamp(2.5rem, 5vw, 3.5rem);
   }
 
-  .navbar__cta {
+  .navbar__cta,
+  .navbar__login {
     display: none;
   }
 
   .hero-slider {
-    min-height: 400px;
-    max-height: 550px;
+    min-height: 420px;
+    max-height: 560px;
+    height: 80vh;
+  }
+
+  .hero-slide {
+    align-items: center;
+    justify-content: center;
+    padding-top: 72px;
+    padding-bottom: 48px;
+    box-sizing: border-box;
   }
 
   .hero-slide__content {
     padding: 0 var(--space-4);
     margin-left: auto;
     margin-right: auto;
+    max-width: 400px;
+    text-align: center;
   }
 
   .hero-slide__label {
     font-size: 0.65rem;
+    margin-bottom: var(--space-3);
   }
 
   .hero-slide__title {
-    font-size: clamp(1.5rem, 7vw, 2.2rem);
+    font-size: clamp(1.4rem, 6vw, 2rem);
+    line-height: 1.25;
+    margin-bottom: var(--space-3);
+    text-wrap: balance;
   }
 
   .hero-slide__text {
     font-size: var(--fs-small);
-    margin-bottom: var(--space-6);
+    line-height: 1.5;
+    margin-bottom: var(--space-5);
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-slide__actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-3);
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  .hero-slide__actions .btn {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 0.75rem 0.85rem;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .hero-slider__dots {
+    bottom: var(--space-4);
   }
 
   .btn {
@@ -560,9 +658,13 @@
     gap: var(--space-6);
   }
 
-  /* Trust bar */
+  /* Trust bar — compact on phones */
+  #trust-bar {
+    padding: var(--space-5) 0 !important;
+  }
+
   .trust-bar__grid {
-    gap: var(--space-4) !important;
+    gap: var(--space-3) !important;
   }
 
   /* Card body */
@@ -619,32 +721,92 @@
   }
 
   .hero-slider {
-    min-height: 380px;
-    max-height: 500px;
+    height: 82vh !important;
+    min-height: 440px !important;
+    max-height: 520px !important;
+  }
+
+  .hero-slide {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding-top: 70px !important;
+    padding-bottom: 48px !important;
+    box-sizing: border-box !important;
   }
 
   .hero-slide__content {
-    padding: 0 var(--space-3);
-  }
-
-  .hero-slide__title {
-    font-size: clamp(1.4rem, 6vw, 1.9rem);
-    line-height: 1.15;
-  }
-
-  .hero-slide__text {
-    font-size: var(--fs-small);
-    margin-bottom: var(--space-6);
+    padding: 0 var(--space-3) !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    width: 100% !important;
+    max-width: 330px !important;
   }
 
   .hero-slide__label {
-    font-size: 0.6rem;
-    gap: var(--space-2);
+    font-size: 0.62rem !important;
+    letter-spacing: var(--ls-wide) !important;
+    gap: var(--space-2) !important;
+    margin-bottom: var(--space-2) !important;
+    white-space: nowrap !important;
   }
 
   .hero-slide__label::before,
   .hero-slide__label::after {
-    width: 18px;
+    width: 16px !important;
+    height: 2px !important;
+  }
+
+  .hero-slide__title {
+    font-size: 1.32rem !important;
+    line-height: 1.25 !important;
+    margin-bottom: var(--space-3) !important;
+    color: var(--ivory) !important;
+    text-wrap: balance !important;
+    max-width: 320px !important;
+    word-break: normal !important;
+  }
+
+  .hero-slide__text {
+    font-size: 0.8rem !important;
+    line-height: 1.45 !important;
+    color: var(--mist) !important;
+    margin-bottom: var(--space-4) !important;
+    max-width: 295px !important;
+    text-align: center !important;
+  }
+
+  .hero-slide__actions {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: var(--space-2) !important;
+    width: 100% !important;
+    max-width: 310px !important;
+    margin: 0 auto !important;
+  }
+
+  .hero-slide__actions .btn {
+    flex: 1 1 0 !important;
+    min-width: 0 !important;
+    padding: 0.65rem 0.5rem !important;
+    font-size: 0.78rem !important;
+    font-weight: var(--fw-semibold) !important;
+    white-space: nowrap !important;
+    text-align: center !important;
+    justify-content: center !important;
+  }
+
+  .hero-slider__dots {
+    bottom: var(--space-4) !important;
+    gap: var(--space-2) !important;
   }
 
   .page-hero {
@@ -701,6 +863,10 @@
   }
 
   .card__image {
+    height: 170px !important;
+  }
+
+  #vehicle-tabs .card > div:first-of-type {
     height: 170px !important;
   }
 
@@ -791,7 +957,7 @@
   }
 
   .hero-slide__title {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   .navbar__brand-name {
@@ -834,6 +1000,19 @@
     padding: 0 var(--space-4);
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+/* ── Login modal — mobile tweaks ── */
+@media (max-width: 480px) {
+  .login-modal__dialog {
+    padding: var(--space-6);
+    margin: var(--space-4);
+    max-height: 88vh;
+  }
+
+  .login-page {
+    padding: calc(var(--space-12) + 60px) var(--space-4) var(--space-8);
   }
 }
 

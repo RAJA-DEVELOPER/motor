@@ -33,6 +33,10 @@
       </nav>
 
       <div class="navbar__actions">
+        <a href="login.html" class="btn btn--ghost btn--sm navbar__login" data-login-trigger aria-label="Login">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          Login
+        </a>
         <a href="contact.html" class="btn btn--primary btn--sm navbar__cta">Get a Quote</a>
         <button class="navbar__toggle-btn" data-theme-toggle aria-label="Toggle dark mode">
           <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
@@ -58,6 +62,13 @@
       <li><a href="blog.html" class="mobile-menu__link">Blog</a></li>
       <li><a href="contact.html" class="mobile-menu__link">Contact</a></li>
     </ul>
+    <div class="mobile-menu__actions">
+      <a href="login.html" class="btn btn--ghost" style="width:100%;justify-content:center;" data-login-trigger>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        Login
+      </a>
+      <a href="contact.html" class="btn btn--primary" style="width:100%;justify-content:center;">Get a Quote</a>
+    </div>
   </aside>
 
   <main id="main-content">
@@ -85,63 +96,154 @@
       </div>
     </section>
 
-    <!-- ══ SECTION 2: Service Cards with Images ══ -->
-    <section class="section" id="services-grid" aria-label="Service Overview">
+    <!-- ══ SECTION 2: Insurance by Vehicle Type — Bike / Car / EV / Commercial (Separate & Clear) ══ -->
+    <section class="section" id="services-grid" aria-label="Insurance by Vehicle Type">
       <div class="container">
-        <div class="section-header reveal"><span class="section-label">What We Do</span><h2>Our Services at a Glance</h2><p>Explore our complete range of motor insurance and vehicle documentation services — each delivered with speed, transparency and expert care.</p></div>
-        <div class="grid grid-3 reveal" style="gap:var(--space-6);">
-          <article class="card hover-lift img-zoom" style="overflow:hidden;">
-            <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=800&q=80" alt="New motor insurance for car" class="card__image" style="height:200px;width:100%;object-fit:cover;" loading="lazy">
-            <div class="card__body" style="display:flex;flex-direction:column;">
-              <span class="card__label">Insurance</span>
-              <h3 class="card__title" style="font-size:var(--fs-h5);">New Motor Insurance</h3>
-              <p class="card__text" style="font-size:var(--fs-small);flex:1;">Comprehensive & third-party plans for bikes and cars. Compare 50+ insurers for best premium.</p>
-              <a href="#service-details" class="hover-underline" style="font-size:var(--fs-small);font-weight:var(--fw-semibold);margin-top:var(--space-4);">Learn more →</a>
+        <div class="section-header reveal"><span class="section-label">Vehicle-Specific Insurance</span><h2>Insurance for Every Vehicle You Own</h2><p>Not just cars — clear, separate plans for bikes, cars, electric vehicles and commercial fleets, each with relevant coverage, pricing and add-ons.</p></div>
+        <div class="grid grid-4 reveal" style="gap:var(--space-6);align-items:stretch;">
+          <!-- Bike Insurance -->
+          <article class="card hover-lift img-zoom" style="overflow:hidden;display:flex;flex-direction:column;height:100%;border-radius:var(--radius-lg);">
+            <div style="position:relative;height:200px;overflow:hidden;flex-shrink:0;background:var(--mist);">
+              <img src="https://images.pexels.com/photos/1413412/pexels-photo-1413412.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Custom black motorcycle front view for two-wheeler bike insurance" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
+              <div style="position:absolute;inset:0;background:linear-gradient(to top, rgba(21,25,28,0.42) 0%, transparent 56%);pointer-events:none;" aria-hidden="true"></div>
+              <span style="position:absolute;top:var(--space-3);left:var(--space-3);background:rgba(21,25,28,0.85);backdrop-filter:blur(6px);color:var(--ivory);padding:5px 10px;border-radius:var(--radius-sm);font-size:var(--fs-caption);font-weight:var(--fw-bold);letter-spacing:var(--ls-wide);display:inline-flex;align-items:center;gap:6px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="14" height="14" aria-hidden="true"><path d="M5 18l2-5h4l2 5"/><circle cx="7.5" cy="18" r="2.5"/><circle cx="16.5" cy="18" r="2.5"/><path d="M11 13l2-4h3l2 4"/></svg> BIKE • TWO-WHEELER</span>
+              <span style="position:absolute;bottom:var(--space-3);right:var(--space-3);background:var(--gradient-gold);color:var(--obsidian);padding:6px 12px;border-radius:var(--radius-full);font-size:var(--fs-caption);font-weight:var(--fw-bold);box-shadow:var(--shadow-sm);">from ₹1,150/yr</span>
+            </div>
+            <div class="card__body" style="flex:1;display:flex;flex-direction:column;padding:var(--space-6);">
+              <span class="card__label">Bike Insurance</span>
+              <h3 class="card__title" style="font-size:var(--fs-h5);margin-bottom:var(--space-2);">Two-Wheeler • Motorcycles & Scooters</h3>
+              <p class="card__text" style="font-size:var(--fs-small);margin-bottom:var(--space-3);">For motorcycles, scooters & mopeds — mandatory third-party + comprehensive own-damage, theft, fire & PA ₹15 Lakh. NCB up to 50%.</p>
+              <ul style="list-style:none;padding:0;margin:0 0 var(--space-4);display:flex;flex-direction:column;gap:7px;min-height:88px;">
+                <li style="display:flex;align-items:flex-start;gap:8px;font-size:var(--fs-small);color:var(--color-text-secondary);line-height:1.5;"><span style="width:6px;height:6px;border-radius:50%;background:var(--color-accent);flex-shrink:0;margin-top:7px;"></span><span>Third-Party: <strong>₹1,150/yr</strong> • Comprehensive: <strong>₹2,400/yr</strong> • Ultimate (Zero Dep+RSA): <strong>₹4,100/yr</strong></span></li>
+                <li style="display:flex;align-items:flex-start;gap:8px;font-size:var(--fs-small);color:var(--color-text-secondary);line-height:1.5;"><span style="width:6px;height:6px;border-radius:50%;background:var(--color-accent);flex-shrink:0;margin-top:7px;"></span><span>Add-ons: Zero dep, pillion cover, engine protect, consumables</span></li>
+              </ul>
+              <a href="#service-details" class="btn btn--ghost btn--sm" style="margin-top:auto;width:100%;justify-content:center;">View Bike Plans →</a>
             </div>
           </article>
-          <article class="card hover-lift img-zoom" style="overflow:hidden;">
-            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80" alt="Policy renewal documents" class="card__image" style="height:200px;width:100%;object-fit:cover;" loading="lazy">
-            <div class="card__body" style="display:flex;flex-direction:column;">
+          <!-- Car Insurance -->
+          <article class="card hover-lift img-zoom" style="overflow:hidden;display:flex;flex-direction:column;height:100%;border-radius:var(--radius-lg);">
+            <div style="position:relative;height:200px;overflow:hidden;flex-shrink:0;background:var(--mist);">
+              <img src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=800" alt="White premium sedan for four-wheeler car insurance" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
+              <div style="position:absolute;inset:0;background:linear-gradient(to top, rgba(21,25,28,0.42) 0%, transparent 56%);pointer-events:none;" aria-hidden="true"></div>
+              <span style="position:absolute;top:var(--space-3);left:var(--space-3);background:var(--teal);color:var(--ivory);padding:5px 10px;border-radius:var(--radius-sm);font-size:var(--fs-caption);font-weight:var(--fw-bold);letter-spacing:var(--ls-wide);display:inline-flex;align-items:center;gap:6px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="14" height="14" aria-hidden="true"><path d="M5 11l1-4h12l1 4"/><circle cx="7.5" cy="16" r="2"/><circle cx="16.5" cy="16" r="2"/><path d="M5 11v4h14v-4"/></svg> CAR • FOUR-WHEELER</span>
+              <span style="position:absolute;bottom:var(--space-3);right:var(--space-3);background:var(--gradient-gold);color:var(--obsidian);padding:6px 12px;border-radius:var(--radius-full);font-size:var(--fs-caption);font-weight:var(--fw-bold);box-shadow:var(--shadow-sm);">from ₹3,200/yr</span>
+            </div>
+            <div class="card__body" style="flex:1;display:flex;flex-direction:column;padding:var(--space-6);">
+              <span class="card__label">Car Insurance</span>
+              <h3 class="card__title" style="font-size:var(--fs-h5);margin-bottom:var(--space-2);">Four-Wheeler • Hatchback, Sedan, SUV</h3>
+              <p class="card__text" style="font-size:var(--fs-small);margin-bottom:var(--space-3);">For hatchbacks, sedans, SUVs & MUVs — own damage, theft, fire, natural calamity, third-party & PA ₹15 Lakh.</p>
+              <ul style="list-style:none;padding:0;margin:0 0 var(--space-4);display:flex;flex-direction:column;gap:7px;min-height:88px;">
+                <li style="display:flex;align-items:flex-start;gap:8px;font-size:var(--fs-small);color:var(--color-text-secondary);line-height:1.5;"><span style="width:6px;height:6px;border-radius:50%;background:var(--color-accent);flex-shrink:0;margin-top:7px;"></span><span>Third-Party: <strong>₹3,200/yr</strong> • Comprehensive: <strong>₹8,500/yr</strong> • Premium Shield: <strong>₹12,800/yr</strong></span></li>
+                <li style="display:flex;align-items:flex-start;gap:8px;font-size:var(--fs-small);color:var(--color-text-secondary);line-height:1.5;"><span style="width:6px;height:6px;border-radius:50%;background:var(--color-accent);flex-shrink:0;margin-top:7px;"></span><span>Add-ons: Zero dep, RSA, engine protect, return-to-invoice</span></li>
+              </ul>
+              <a href="#service-details" class="btn btn--ghost btn--sm" style="margin-top:auto;width:100%;justify-content:center;">View Car Plans →</a>
+            </div>
+          </article>
+          <!-- Electric Vehicle Insurance -->
+          <article class="card hover-lift img-zoom" style="overflow:hidden;display:flex;flex-direction:column;height:100%;border-radius:var(--radius-lg);border:1.5px solid rgba(46,125,91,0.18);">
+            <div style="position:relative;height:200px;overflow:hidden;flex-shrink:0;background:var(--mist);">
+              <img src="https://images.pexels.com/photos/110844/pexels-photo-110844.jpeg?auto=compress&cs=tinysrgb&w=800" alt="White electric car charging with orange cable for EV insurance — battery and motor cover" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
+              <div style="position:absolute;inset:0;background:linear-gradient(to top, rgba(21,25,28,0.42) 0%, transparent 56%);pointer-events:none;" aria-hidden="true"></div>
+              <span style="position:absolute;top:var(--space-3);left:var(--space-3);background:#2E7D5B;color:var(--ivory);padding:5px 10px;border-radius:var(--radius-sm);font-size:var(--fs-caption);font-weight:var(--fw-bold);letter-spacing:var(--ls-wide);display:inline-flex;align-items:center;gap:6px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="14" height="14" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/><circle cx="12" cy="12" r="0.5" fill="currentColor" stroke="none"/></svg> ELECTRIC • EV</span>
+              <span style="position:absolute;bottom:var(--space-3);right:var(--space-3);background:#2E7D5B;color:var(--ivory);padding:6px 12px;border-radius:var(--radius-full);font-size:var(--fs-caption);font-weight:var(--fw-bold);box-shadow:var(--shadow-sm);">from ₹2,100/yr</span>
+              <span style="position:absolute;top:var(--space-3);right:var(--space-3);background:rgba(255,255,255,0.92);backdrop-filter:blur(6px);padding:4px 8px;border-radius:var(--radius-full);font-size:10px;font-weight:var(--fw-bold);letter-spacing:0.06em;color:#2E7D5B;">BATTERY COVER</span>
+            </div>
+            <div class="card__body" style="flex:1;display:flex;flex-direction:column;padding:var(--space-6);">
+              <span class="card__label" style="color:#2E7D5B;">EV Insurance</span>
+              <h3 class="card__title" style="font-size:var(--fs-h5);margin-bottom:var(--space-2);">Electric — e-Bike, e-Car, e-Scooter</h3>
+              <p class="card__text" style="font-size:var(--fs-small);margin-bottom:var(--space-3);">Specialised for EVs — battery, motor, charger & wall-box cover, zero dep, roadside charging assistance.</p>
+              <ul style="list-style:none;padding:0;margin:0 0 var(--space-4);display:flex;flex-direction:column;gap:7px;min-height:88px;">
+                <li style="display:flex;align-items:flex-start;gap:8px;font-size:var(--fs-small);color:var(--color-text-secondary);line-height:1.5;"><span style="width:6px;height:6px;border-radius:50%;background:#2E7D5B;flex-shrink:0;margin-top:7px;"></span><span>e-Bike: <strong>₹2,100/yr</strong> • e-Car: <strong>₹9,500/yr</strong> • Battery protect incl.</span></li>
+                <li style="display:flex;align-items:flex-start;gap:8px;font-size:var(--fs-small);color:var(--color-text-secondary);line-height:1.5;"><span style="width:6px;height:6px;border-radius:50%;background:#2E7D5B;flex-shrink:0;margin-top:7px;"></span><span>Add-ons: Battery protect, charging cable, motor, zero dep</span></li>
+              </ul>
+              <a href="#service-details" class="btn btn--ghost btn--sm" style="margin-top:auto;width:100%;justify-content:center;border-color:rgba(46,125,91,0.25);">View EV Plans →</a>
+            </div>
+          </article>
+          <!-- Commercial Vehicle Insurance -->
+          <article class="card hover-lift img-zoom" style="overflow:hidden;display:flex;flex-direction:column;height:100%;border-radius:var(--radius-lg);">
+            <div style="position:relative;height:200px;overflow:hidden;flex-shrink:0;background:var(--mist);">
+              <img src="https://images.pexels.com/photos/2199293/pexels-photo-2199293.jpeg?auto=compress&cs=tinysrgb&w=800" alt="White commercial delivery truck for commercial vehicle insurance" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
+              <div style="position:absolute;inset:0;background:linear-gradient(to top, rgba(21,25,28,0.42) 0%, transparent 56%);pointer-events:none;" aria-hidden="true"></div>
+              <span style="position:absolute;top:var(--space-3);left:var(--space-3);background:var(--obsidian);color:var(--ivory);padding:5px 10px;border-radius:var(--radius-sm);font-size:var(--fs-caption);font-weight:var(--fw-bold);letter-spacing:var(--ls-wide);display:inline-flex;align-items:center;gap:6px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="14" height="14" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M7 7V5a4 4 0 018 0v7"/><path d="M3 11h18"/></svg> COMMERCIAL • FLEET</span>
+              <span style="position:absolute;bottom:var(--space-3);right:var(--space-3);background:var(--obsidian);color:var(--ivory);padding:6px 12px;border-radius:var(--radius-full);font-size:var(--fs-caption);font-weight:var(--fw-bold);box-shadow:var(--shadow-sm);">from ₹12,000/yr</span>
+            </div>
+            <div class="card__body" style="flex:1;display:flex;flex-direction:column;padding:var(--space-6);">
+              <span class="card__label">Commercial Insurance</span>
+              <h3 class="card__title" style="font-size:var(--fs-h5);margin-bottom:var(--space-2);">Commercial — Truck, Bus, Taxi, Tempo</h3>
+              <p class="card__text" style="font-size:var(--fs-small);margin-bottom:var(--space-3);">For goods carriers, buses, taxis, autos & fleets — heavy third-party, own damage, driver/cleaner PA, fleet NCB.</p>
+              <ul style="list-style:none;padding:0;margin:0 0 var(--space-4);display:flex;flex-direction:column;gap:7px;min-height:88px;">
+                <li style="display:flex;align-items:flex-start;gap:8px;font-size:var(--fs-small);color:var(--color-text-secondary);line-height:1.5;"><span style="width:6px;height:6px;border-radius:50%;background:var(--obsidian);flex-shrink:0;margin-top:7px;"></span><span>Third-Party: <strong>from ₹12k/yr</strong> • Fleet discount up to <strong>30%</strong></span></li>
+                <li style="display:flex;align-items:flex-start;gap:8px;font-size:var(--fs-small);color:var(--color-text-secondary);line-height:1.5;"><span style="width:6px;height:6px;border-radius:50%;background:var(--obsidian);flex-shrink:0;margin-top:7px;"></span><span>Add-ons: Driver PA ₹10L, goods cover, consumables</span></li>
+              </ul>
+              <a href="#service-details" class="btn btn--ghost btn--sm" style="margin-top:auto;width:100%;justify-content:center;">View Commercial Plans →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <style>
+      /* Content alignment inside Service cards — equal heights for uniform layout */
+      #services-grid .card__body { gap: 0; }
+      #services-grid .card__title { min-height: 56px !important; line-height: 1.35 !important; display: flex !important; align-items: flex-start !important; }
+      #services-grid .card__text { min-height: 74px !important; line-height: 1.6 !important; }
+      #services-grid .card ul { min-height: 92px !important; align-content: start !important; display: flex !important; flex-direction: column !important; justify-content: flex-start !important; }
+      #services-grid .card ul li { line-height: 1.5 !important; }
+      #services-docs .card__title { min-height: 32px !important; }
+      #services-docs .card__text { min-height: 72px !important; line-height: 1.6 !important; }
+      #services-docs .card .hover-underline { margin-top: auto !important; }
+      #services-grid .card, #services-docs .card { height: 100% !important; }
+      @media (max-width: 1024px) {
+        #services-grid .card__title { min-height: 48px !important; }
+        #services-grid .card__text { min-height: 64px !important; }
+        #services-grid .card ul { min-height: 84px !important; }
+      }
+      @media (max-width: 768px) {
+        #services-grid .card__title { min-height: auto !important; }
+        #services-grid .card__text { min-height: auto !important; }
+        #services-grid .card ul { min-height: auto !important; }
+        #services-docs .card__title { min-height: auto !important; }
+        #services-docs .card__text { min-height: auto !important; }
+      }
+    </style>
+    <!-- ══ SECTION 2B: Documentation Services ══ -->
+    <section class="section section--mist" id="services-docs" aria-label="Documentation Services">
+      <div class="container">
+        <div class="section-header reveal"><span class="section-label">Beyond Insurance</span><h2>Vehicle Documentation Services</h2><p>RTO paperwork handled end-to-end — transparent fees and home collection.</p></div>
+        <div class="grid grid-4 reveal" style="gap:var(--space-6);align-items:stretch;">
+          <article class="card hover-lift img-zoom" style="overflow:hidden;display:flex;flex-direction:column;height:100%;border-radius:var(--radius-lg);">
+            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80" alt="Policy renewal documents" class="card__image" style="height:180px;width:100%;object-fit:cover;flex-shrink:0;" loading="lazy">
+            <div class="card__body" style="display:flex;flex-direction:column;flex:1;padding:var(--space-6);">
               <span class="card__label">Renewal</span>
               <h3 class="card__title" style="font-size:var(--fs-h5);">Policy Renewal</h3>
               <p class="card__text" style="font-size:var(--fs-small);flex:1;">On-time renewal with NCB protection, premium comparison and instant certificate.</p>
               <a href="#service-details" class="hover-underline" style="font-size:var(--fs-small);font-weight:var(--fw-semibold);margin-top:var(--space-4);">Learn more →</a>
             </div>
           </article>
-          <article class="card hover-lift img-zoom" style="overflow:hidden;">
-            <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80" alt="RC transfer car ownership" class="card__image" style="height:200px;width:100%;object-fit:cover;" loading="lazy">
-            <div class="card__body" style="display:flex;flex-direction:column;">
+          <article class="card hover-lift img-zoom" style="overflow:hidden;display:flex;flex-direction:column;height:100%;border-radius:var(--radius-lg);">
+            <img src="https://images.pexels.com/photos/97075/pexels-photo-97075.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Handing over car keys for RC transfer — RTO ownership transfer" class="card__image" style="height:180px;width:100%;object-fit:cover;flex-shrink:0;" loading="lazy">
+            <div class="card__body" style="display:flex;flex-direction:column;flex:1;padding:var(--space-6);">
               <span class="card__label">RTO Services</span>
               <h3 class="card__title" style="font-size:var(--fs-h5);">RC Transfer</h3>
               <p class="card__text" style="font-size:var(--fs-small);flex:1;">End-to-end ownership transfer — Form 29/30, NOC, RTO submission & new RC delivery.</p>
               <a href="#service-details" class="hover-underline" style="font-size:var(--fs-small);font-weight:var(--fw-semibold);margin-top:var(--space-4);">Learn more →</a>
             </div>
           </article>
-          <article class="card hover-lift img-zoom" style="overflow:hidden;">
-            <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=800&q=80" alt="Vehicle fitness inspection" class="card__image" style="height:200px;width:100%;object-fit:cover;" loading="lazy">
-            <div class="card__body" style="display:flex;flex-direction:column;">
+          <article class="card hover-lift img-zoom" style="overflow:hidden;display:flex;flex-direction:column;height:100%;border-radius:var(--radius-lg);">
+            <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=800&q=80" alt="Vehicle fitness inspection" class="card__image" style="height:180px;width:100%;object-fit:cover;flex-shrink:0;" loading="lazy">
+            <div class="card__body" style="display:flex;flex-direction:column;flex:1;padding:var(--space-6);">
               <span class="card__label">Fitness</span>
               <h3 class="card__title" style="font-size:var(--fs-h5);">Fitness Certificate</h3>
               <p class="card__text" style="font-size:var(--fs-small);flex:1;">Mandatory fitness for commercial & 15+ year vehicles. Inspection scheduling & certificate delivery.</p>
               <a href="#service-details" class="hover-underline" style="font-size:var(--fs-small);font-weight:var(--fw-semibold);margin-top:var(--space-4);">Learn more →</a>
             </div>
           </article>
-          <article class="card hover-lift img-zoom" style="overflow:hidden;">
-            <img src="https://images.unsplash.com/photo-1485291571150-772bcfc10da5?auto=format&fit=crop&w=800&q=80" alt="PUC emission testing" class="card__image" style="height:200px;width:100%;object-fit:cover;" loading="lazy">
-            <div class="card__body" style="display:flex;flex-direction:column;">
+          <article class="card hover-lift img-zoom" style="overflow:hidden;display:flex;flex-direction:column;height:100%;border-radius:var(--radius-lg);">
+            <img src="https://images.unsplash.com/photo-1485291571150-772bcfc10da5?auto=format&fit=crop&w=800&q=80" alt="PUC emission testing" class="card__image" style="height:180px;width:100%;object-fit:cover;flex-shrink:0;" loading="lazy">
+            <div class="card__body" style="display:flex;flex-direction:column;flex:1;padding:var(--space-6);">
               <span class="card__label">Compliance</span>
               <h3 class="card__title" style="font-size:var(--fs-h5);">PUC Assistance</h3>
               <p class="card__text" style="font-size:var(--fs-small);flex:1;">Stay compliant — nearest PUC center, validity tracking & renewal reminders. Avoid ₹10,000 fines.</p>
               <a href="#service-details" class="hover-underline" style="font-size:var(--fs-small);font-weight:var(--fw-semibold);margin-top:var(--space-4);">Learn more →</a>
-            </div>
-          </article>
-          <article class="card hover-lift img-zoom" style="overflow:hidden;">
-            <img src="https://images.unsplash.com/photo-1506784365847-bbad939e9335?auto=format&fit=crop&w=800&q=80" alt="Vehicle document checklist" class="card__image" style="height:200px;width:100%;object-fit:cover;" loading="lazy">
-            <div class="card__body" style="display:flex;flex-direction:column;">
-              <span class="card__label">Documentation</span>
-              <h3 class="card__title" style="font-size:var(--fs-h5);">Document Checklists</h3>
-              <p class="card__text" style="font-size:var(--fs-small);flex:1;">Interactive checklists for every service — ensure you have all RC, insurance, PUC & ID proofs ready.</p>
-              <a href="#checklist-section" class="hover-underline" style="font-size:var(--fs-small);font-weight:var(--fw-semibold);margin-top:var(--space-4);">View checklist →</a>
             </div>
           </article>
         </div>
@@ -158,6 +260,12 @@
             <div class="accordion__content" style="max-height:500px;"><div class="accordion__body">
               <p>Get comprehensive or third-party motor insurance for two-wheelers and four-wheelers. We compare plans from 50+ insurers to find the best coverage at the most competitive premium.</p>
               <p><strong>Coverage includes:</strong> Own damage, theft, fire, natural calamity, third-party liability, personal accident, and optional add-ons like zero depreciation, roadside assistance, and engine protection.</p>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-4);margin-top:var(--space-4);">
+                <div style="padding:var(--space-4);background:var(--color-bg-section);border-radius:var(--radius-md);"><strong style="font-size:var(--fs-small);display:flex;align-items:center;gap:6px;"><svg viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.7" width="16" height="16"><path d="M5 18l2-5h4l2 5"/><circle cx="7.5" cy="18" r="2.5"/><circle cx="16.5" cy="18" r="2.5"/></svg> Bike / Two-Wheeler</strong><span style="font-size:var(--fs-small);color:var(--color-text-secondary);">₹1,150 TP • ₹2,400 Comprehensive • Add: zero dep, pillion, engine</span></div>
+                <div style="padding:var(--space-4);background:var(--color-bg-section);border-radius:var(--radius-md);"><strong style="font-size:var(--fs-small);display:flex;align-items:center;gap:6px;"><svg viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.7" width="14" height="14"><path d="M5 11l1-4h12l1 4"/><circle cx="7.5" cy="16" r="2"/><circle cx="16.5" cy="16" r="2"/></svg> Car / Four-Wheeler</strong><span style="font-size:var(--fs-small);color:var(--color-text-secondary);">₹3,200 TP • ₹8,500 Comprehensive • Add: zero dep, RSA, RTI</span></div>
+                <div style="padding:var(--space-4);background:var(--color-bg-section);border-radius:var(--radius-md);border-left:3px solid #2E7D5B;"><strong style="font-size:var(--fs-small);display:flex;align-items:center;gap:6px;"><svg viewBox="0 0 24 24" fill="none" stroke="#2E7D5B" stroke-width="1.7" width="14" height="14"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg> Electric Vehicle</strong><span style="font-size:var(--fs-small);color:var(--color-text-secondary);">₹2,100 e-Bike • ₹9,500 e-Car • Battery, charger & motor cover</span></div>
+                <div style="padding:var(--space-4);background:var(--color-bg-section);border-radius:var(--radius-md);border-left:3px solid var(--obsidian);"><strong style="font-size:var(--fs-small);display:flex;align-items:center;gap:6px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="14" height="14"><rect x="3" y="7" width="18" height="13" rx="2"/></svg> Commercial</strong><span style="font-size:var(--fs-small);color:var(--color-text-secondary);">from ₹12k/yr • Fleet 30% off • Driver PA ₹10L</span></div>
+              </div>
               <p><strong>Required documents:</strong> Vehicle RC, previous insurance (if any), PAN card, Aadhaar card, and vehicle inspection photos.</p>
               <p><strong>Processing time:</strong> Same-day policy issuance for standard cases.</p>
             </div></div>
@@ -229,24 +337,25 @@
       </div>
     </section>
 
-    <!-- -- SECTION 5: Comparison Table -- -->
+    <!-- -- SECTION 5: Comparison Table — Bike / Car / EV / Commercial -- -->
     <section class="section" id="comparison" aria-label="Insurance Comparison">
       <div class="container">
-        <div class="section-header reveal"><span class="section-label">Compare Plans</span><h2>Two-Wheeler vs Four-Wheeler Insurance</h2></div>
-        <div class="comparison-table-wrap reveal">
-          <table style="width:100%;border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--color-border);">
-            <thead style="background:var(--obsidian);"><tr><th style="color:var(--ivory);border:none;">Feature</th><th style="color:var(--ivory);border:none;text-align:center;">Two-Wheeler</th><th style="color:var(--ivory);border:none;text-align:center;">Four-Wheeler</th></tr></thead>
+        <div class="section-header reveal"><span class="section-label">Compare Plans</span><h2>Bike vs Car vs EV vs Commercial — Clear Comparison</h2><p>Separate, transparent comparison across all 4 vehicle categories.</p></div>
+        <div class="comparison-table-wrap reveal" style="overflow-x:auto;">
+          <table style="width:100%;min-width:760px;border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--color-border);">
+            <thead style="background:var(--obsidian);"><tr><th style="color:var(--ivory);border:none;vertical-align:middle;">Feature</th><th style="color:var(--ivory);border:none;text-align:center;vertical-align:middle;"><span style="display:inline-flex;align-items:center;gap:6px;justify-content:center;width:100%;line-height:1;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="14" height="14" style="flex-shrink:0;"><path d="M5 18l2-5h4l2 5"/><circle cx="7.5" cy="18" r="2.5"/><circle cx="16.5" cy="18" r="2.5"/><path d="M11 13l2-4h3l2 4"/></svg> Bike</span></th><th style="color:var(--ivory);border:none;text-align:center;vertical-align:middle;"><span style="display:inline-flex;align-items:center;gap:6px;justify-content:center;width:100%;line-height:1;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="14" height="14" style="flex-shrink:0;"><path d="M5 11l1-4h12l1 4"/><circle cx="7.5" cy="16" r="2"/><circle cx="16.5" cy="16" r="2"/><path d="M5 11v4h14v-4"/></svg> Car</span></th><th style="color:var(--ivory);border:none;text-align:center;vertical-align:middle;background:rgba(46,125,91,0.35);"><span style="display:inline-flex;align-items:center;gap:6px;justify-content:center;width:100%;line-height:1;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="14" height="14" style="flex-shrink:0;"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg> EV</span></th><th style="color:var(--ivory);border:none;text-align:center;vertical-align:middle;"><span style="display:inline-flex;align-items:center;gap:6px;justify-content:center;width:100%;line-height:1;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="14" height="14" style="flex-shrink:0;"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M7 7V5a4 4 0 018 0v7"/><path d="M3 11h18"/></svg> Commercial</span></th></tr></thead>
             <tbody>
-              <tr><td style="font-weight:var(--fw-semibold);">Third-Party (Starting)</td><td style="text-align:center;">₹1,150/yr</td><td style="text-align:center;">₹3,200/yr</td></tr>
-              <tr><td style="font-weight:var(--fw-semibold);">Comprehensive (Starting)</td><td style="text-align:center;">₹2,400/yr</td><td style="text-align:center;">₹8,500/yr</td></tr>
-              <tr><td style="font-weight:var(--fw-semibold);">Zero Depreciation Add-on</td><td style="text-align:center;color:var(--color-success);">Available</td><td style="text-align:center;color:var(--color-success);">Available</td></tr>
-              <tr><td style="font-weight:var(--fw-semibold);">Roadside Assistance</td><td style="text-align:center;color:var(--color-success);">Available</td><td style="text-align:center;color:var(--color-success);">Available</td></tr>
-              <tr><td style="font-weight:var(--fw-semibold);">Engine Protection</td><td style="text-align:center;color:var(--color-text-muted);">Limited</td><td style="text-align:center;color:var(--color-success);">Available</td></tr>
-              <tr><td style="font-weight:var(--fw-semibold);">Return to Invoice</td><td style="text-align:center;color:var(--color-text-muted);">N/A</td><td style="text-align:center;color:var(--color-success);">Available</td></tr>
-              <tr><td style="font-weight:var(--fw-semibold);">Personal Accident Cover</td><td style="text-align:center;">₹15 Lakh</td><td style="text-align:center;">₹15 Lakh</td></tr>
-              <tr><td style="font-weight:var(--fw-semibold);">Claim Settlement</td><td style="text-align:center;">7–15 Days</td><td style="text-align:center;">7–15 Days</td></tr>
+              <tr><td style="font-weight:var(--fw-semibold);">Third-Party (Starting)</td><td style="text-align:center;">₹1,150/yr</td><td style="text-align:center;">₹3,200/yr</td><td style="text-align:center;">₹2,100/yr</td><td style="text-align:center;">₹12,000/yr</td></tr>
+              <tr><td style="font-weight:var(--fw-semibold);">Comprehensive (Starting)</td><td style="text-align:center;">₹2,400/yr</td><td style="text-align:center;">₹8,500/yr</td><td style="text-align:center;">₹9,500/yr*</td><td style="text-align:center;">₹18,500/yr</td></tr>
+              <tr><td style="font-weight:var(--fw-semibold);">Zero Depreciation</td><td style="text-align:center;color:var(--color-success);">Available</td><td style="text-align:center;color:var(--color-success);">Available</td><td style="text-align:center;color:var(--color-success);">Available + Battery</td><td style="text-align:center;color:var(--color-success);">Available</td></tr>
+              <tr><td style="font-weight:var(--fw-semibold);">Roadside Assistance</td><td style="text-align:center;color:var(--color-success);">Available</td><td style="text-align:center;color:var(--color-success);">Available</td><td style="text-align:center;color:#2E7D5B;">Charging Assist ✓</td><td style="text-align:center;color:var(--color-success);">Fleet RSA*</td></tr>
+              <tr><td style="font-weight:var(--fw-semibold);">Battery / Engine Protect</td><td style="text-align:center;color:var(--color-text-muted);">Limited</td><td style="text-align:center;color:var(--color-success);">Engine ✓</td><td style="text-align:center;color:#2E7D5B;">Battery + Motor ✓</td><td style="text-align:center;color:var(--color-success);">Engine + Goods</td></tr>
+              <tr><td style="font-weight:var(--fw-semibold);">Return to Invoice</td><td style="text-align:center;color:var(--color-text-muted);">N/A</td><td style="text-align:center;color:var(--color-success);">Available</td><td style="text-align:center;color:var(--color-success);">Available (e-Car)</td><td style="text-align:center;color:var(--color-text-muted);">N/A</td></tr>
+              <tr><td style="font-weight:var(--fw-semibold);">Personal Accident Cover</td><td style="text-align:center;">₹15 Lakh</td><td style="text-align:center;">₹15 Lakh</td><td style="text-align:center;">₹15 Lakh</td><td style="text-align:center;">₹10 Lakh (Driver)</td></tr>
+              <tr><td style="font-weight:var(--fw-semibold);">Claim Settlement</td><td style="text-align:center;">7–15 Days</td><td style="text-align:center;">7–15 Days</td><td style="text-align:center;">7–15 Days</td><td style="text-align:center;">10–20 Days</td></tr>
             </tbody>
           </table>
+          <p style="font-size:var(--fs-caption);color:var(--color-text-muted);margin-top:var(--space-3);text-align:center;">* e-Car comprehensive varies by battery capacity. Fleet RSA and goods cover optional for commercial.</p>
         </div>
       </div>
     </section>
@@ -290,7 +399,7 @@
               <div class="form-group"><label class="form-label" for="svc-name">Full Name</label><input type="text" id="svc-name" class="form-input" placeholder="Enter your name" required></div>
               <div class="form-group"><label class="form-label" for="svc-phone">Phone Number</label><input type="tel" id="svc-phone" class="form-input" placeholder="+91 XXXXX XXXXX" required data-validate-type="tel"></div>
               <div class="form-group"><label class="form-label" for="svc-email">Email Address</label><input type="email" id="svc-email" class="form-input" placeholder="your@email.com" required data-validate-type="email"></div>
-              <div class="form-group"><label class="form-label" for="svc-vehicle">Vehicle Type</label><select id="svc-vehicle" class="form-input form-select" required><option value="">Select Type</option><option>Two-Wheeler</option><option>Four-Wheeler (Car)</option><option>Four-Wheeler (SUV)</option><option>Commercial Vehicle</option></select></div>
+              <div class="form-group"><label class="form-label" for="svc-vehicle">Vehicle Type</label><select id="svc-vehicle" class="form-input form-select" required><option value="">Select Type</option><option>Bike / Two-Wheeler</option><option>Car / Four-Wheeler</option><option>Electric - e-Bike / e-Scooter</option><option>Electric - e-Car</option><option>Commercial - Truck / Bus / Taxi / Tempo</option><option>Fleet / Multiple Vehicles</option></select></div>
               <div class="form-group"><label class="form-label" for="svc-service">Service Required</label><select id="svc-service" class="form-input form-select" required><option value="">Select Service</option><option>New Insurance</option><option>Policy Renewal</option><option>RC Transfer</option><option>Fitness Certificate</option><option>PUC Assistance</option><option>Document Checklists</option></select></div>
               <div class="form-group"><label class="form-label" for="svc-date">Preferred Date</label><input type="date" id="svc-date" class="form-input" required></div>
             </div>
@@ -364,6 +473,7 @@
     </div>
   </footer>
   <button class="back-to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg></button>
-  <script src="js/theme.js"></script><script src="js/rtl.js"></script><script src="js/navbar.js"></script><script src="js/slider.js"></script><script src="js/scroll-reveal.js"></script><script src="js/accordion.js"></script><script src="js/forms.js"></script><script src="js/back-to-top.js"></script><script src="js/page-transitions.js"></script><script src="js/lazy-load.js"></script><script src="js/app.js"></script>
+  <script src="js/theme.js"></script><script src="js/rtl.js"></script><script src="js/navbar.js"></script><script src="js/slider.js"></script><script src="js/scroll-reveal.js"></script><script src="js/accordion.js"></script><script src="js/forms.js"></script><script src="js/back-to-top.js"></script><script src="js/page-transitions.js"></script><script src="js/lazy-load.js"></script><script src="js/login.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
