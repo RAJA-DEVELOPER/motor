@@ -3,26 +3,28 @@
    ============================================ */
 
 // Import & initialize all modules on DOM ready
+// Each guard keeps standalone pages (login, signup, 404) working
+// even when an optional module script is not included.
 document.addEventListener('DOMContentLoaded', () => {
   // Initialize core modules
-  ThemeManager.init();
-  RTLManager.init();
-  Navbar.init();
-  ScrollReveal.init();
-  BackToTop.init();
-  LazyLoad.init();
-  PageTransitions.init();
+  if (typeof ThemeManager !== 'undefined') ThemeManager.init();
+  if (typeof RTLManager !== 'undefined') RTLManager.init();
+  if (typeof Navbar !== 'undefined') Navbar.init();
+  if (typeof ScrollReveal !== 'undefined') ScrollReveal.init();
+  if (typeof BackToTop !== 'undefined') BackToTop.init();
+  if (typeof LazyLoad !== 'undefined') LazyLoad.init();
+  if (typeof PageTransitions !== 'undefined') PageTransitions.init();
 
   // Initialize page-specific modules
-  if (document.querySelector('.hero-slider')) {
+  if (typeof HeroSlider !== 'undefined' && document.querySelector('.hero-slider')) {
     HeroSlider.init();
   }
 
-  if (document.querySelector('.accordion')) {
+  if (typeof Accordion !== 'undefined' && document.querySelector('.accordion')) {
     Accordion.init();
   }
 
-  if (document.querySelector('[data-validate]')) {
+  if (typeof FormValidator !== 'undefined' && document.querySelector('[data-validate]')) {
     FormValidator.init();
   }
 

@@ -27,16 +27,29 @@ const PageTransitions = {
       });
     });
 
-    // Handle browser back/forward
-    window.addEventListener('pageshow', (e) => {
+    // Handle browser back/forward (incl. bfcache restores)
+    window.addEventListener('pageshow', () => {
+      clearTimeout(this._t);
       document.body.classList.remove('page-transitioning');
+    });
+
+    // If the user goes back/forward while a transition is pending,
+    // cancel it so the browser navigation is not overridden.
+    window.addEventListener('popstate', () => {
+      clearTimeout(this._t);
+      document.body.classList.remove('page-transitioning');
+    });
+
+    window.addEventListener('pagehide', () => {
+      clearTimeout(this._t);
     });
   },
 
   navigateTo(url) {
     document.body.classList.add('page-transitioning');
 
-    setTimeout(() => {
+    clearTimeout(this._t);
+    this._t = setTimeout(() => {
       window.location.href = url;
     }, 400);
   }

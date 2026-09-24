@@ -28,13 +28,24 @@ const FormValidator = {
           if (input.classList.contains('form-input--error')) {
             this.validateField(input);
           }
+          // Re-validate confirm-password when the original password changes
+          const confirm = form.querySelector(`[data-match="${input.id}"]`);
+          if (confirm && confirm.value) {
+            this.validateField(confirm);
+          }
         });
+      });
+
+      // Terms checkbox live feedback
+      const requiredChecks = form.querySelectorAll('input[type="checkbox"][required]');
+      requiredChecks.forEach(chk => {
+        chk.addEventListener('change', () => this.validateField(chk));
       });
     });
   },
 
   validateForm(form) {
-    const inputs = form.querySelectorAll('.form-input[required], .form-input[data-validate-type]');
+    const inputs = form.querySelectorAll('.form-input[required], .form-input[data-validate-type], input[type="checkbox"][required]');
     let isValid = true;
 
     inputs.forEach(input => {
@@ -47,6 +58,17 @@ const FormValidator = {
   },
 
   validateField(input) {
+    // Required checkbox (e.g. Terms & Conditions)
+    if (input.type === 'checkbox') {
+      const group = input.closest('.form-group') || input.parentElement;
+      if (input.hasAttribute('required') && !input.checked) {
+        this.setError(input, 'You must accept the Terms & Conditions');
+        return false;
+      }
+      this.setError(input, '');
+      return true;
+    }
+
     const value = input.value.trim();
     const type = input.dataset.validateType || input.type;
     let errorMsg = '';
@@ -73,6 +95,13 @@ const FormValidator = {
     else if (input.dataset.minLength && value.length < parseInt(input.dataset.minLength)) {
       errorMsg = `Minimum ${input.dataset.minLength} characters required`;
     }
+    // Confirm-password / field match (e.g. data-match="su-password")
+    else if (input.dataset.match) {
+      const other = document.getElementById(input.dataset.match);
+      if (other && value !== other.value.trim()) {
+        errorMsg = 'Passwords do not match';
+      }
+    }
 
     // Show / hide error
     this.setError(input, errorMsg);
@@ -80,7 +109,7 @@ const FormValidator = {
   },
 
   setError(input, message) {
-    const group = input.closest('.form-group');
+    const group = input.closest('.form-group') || input.parentElement;
     if (!group) return;
 
     let errorEl = group.querySelector('.form-error');
@@ -103,11 +132,12 @@ const FormValidator = {
   handleSubmit(form) {
     const submitBtn = form.querySelector('[type="submit"]');
     const originalText = submitBtn?.textContent;
-    const isLoginForm = form.closest('.login-page') !== null || form.closest('.login-modal') !== null || form.classList.contains('login-modal__form');
+    const isSignupForm = form.dataset.formType === 'signup' || form.closest('[data-form-type="signup"]') !== null || (form.querySelector('[data-match]') !== null && form.closest('.login-page') !== null);
+    const isLoginForm = form.closest('.login-page') !== null || form.closest('.login-modal') !== null || form.classList.contains('login-modal__form') || isSignupForm;
 
     if (submitBtn) {
       submitBtn.disabled = true;
-      submitBtn.textContent = isLoginForm ? 'Signing in...' : 'Sending...';
+      submitBtn.textContent = isSignupForm ? 'Creating account...' : (isLoginForm ? 'Signing in...' : 'Sending...');
     }
 
     // Simulate submission
@@ -119,7 +149,7 @@ const FormValidator = {
       }
 
       if (isLoginForm) {
-        // Redirect to home page after successful sign-in
+        // Redirect to home page after successful sign-in / sign-up
         window.location.href = 'index.html';
       } else {
         // Show success message
